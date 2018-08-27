@@ -79,7 +79,7 @@
 		}
 		#aboutnew
 		{
-			background-color:#ffffff;
+			background-color:#009EE3;
 		}
         
        /* SIMLPE CSS RESET */
@@ -164,6 +164,15 @@ ul#filterOptions li.active a { background: #999; }
     padding: 15px;
     margin-bottom: 10px;
 }
+#term1,#term2,#term3
+{
+margin-left:10px;
+}
+#fil
+{
+margin-left:300px;
+margin-bottom:20px;
+}
 #nametitle
 {
 	color: #ffffff;
@@ -171,6 +180,22 @@ ul#filterOptions li.active a { background: #999; }
 }
 a {
     text-decoration: none;
+}
+.btn-blue
+{
+padding:9px 55px;
+}
+.btn-effect:hover, .btn-effect:focus, .btn-effect:active
+{
+padding:9px 55px;
+}
+.article-list-vertical li div p
+{
+font-weight:bold;
+}
+.article-list-vertical li > a
+{
+width:160px;
 }
 @media (max-width: 375px){
 
@@ -256,6 +281,7 @@ a {
 			
 			<section id="about">
 		<div class="col-md-12" id="aboutnew">
+<div id="fil">
        <ul id="filterOptions">
     <li class="active"><a href="#" class="all">All</a></li>
     <li><a href="#" class="journals">Journals</a></li>
@@ -263,40 +289,47 @@ a {
     <li><a href="#" class="other">Others</a></li>
   
   </ul>
+</div>
     <ul class="article-list-vertical" id="ourHolder">
 
         <li class="item journals" id="list1">
-            <a href="#" style="background-image: url('assets/images/pictures/BT_example.png')"></a>
+            <a class="img-responsive" href="#" style="background-image: url('assets/images/pictures/BT_example.png')"></a>
             <div>
                 
-               <p>Michele Colledanchise, Ramviyas Parasuraman, Petter Ögren. "Learning of Behavior Trees for Autonomous Agents", in IEEE Transactions on Games (2018). doi: 10.1109/TG.2018.2816806. Link to the <a href="https://ieeexplore.ieee.org/document/8319483/" target="_blank" rel="nofollow">Paper</a></p>
-               <p> <a href="https://arxiv.org/pdf/1504.05811"  class="btn btn-blue btn-effect">PDF</a> <a href="javascript:myFunc_abs(1)" target="_blank" class="btn btn-blue btn-effect">abstract</a></p> 
+               <p>Michele Colledanchise, Ramviyas Parasuraman, Petter Ögren. "Learning of Behavior Trees for Autonomous Agents", in IEEE Transactions on Games (2018). doi: 10.1109/TG.2018.2816806. </p>
+
+               <p> <a id="term1" href="https://arxiv.org/pdf/1504.05811"  class="btn btn-blue btn-effect">PDF</a> <a id="term2" href="javascript:myFunc_abs(1)" target="_blank" class="btn btn-blue btn-effect">Abstract</a> <a id="term3" href="https://ieeexplore.ieee.org/document/8319483/"  class="btn btn-blue btn-effect" target="_blank" >Paper</a>  </p> 
             </div>
         </li>
        <div class="col-md-12 newcontent" id="bib1" style="display:none;"> <a href="https://arxiv.org/pdf/1504.05811"></a></div>
        
        <div class="col-md-12 newcontent" id="abs1" style="display:none;"> In this paper, we study the problem of automatically synthesizing a successful Behavior Tree (BT) in an a-priori unknown dynamic environment. Starting with a given set of behaviors, a reward function, and sensing in terms of a set of binary conditions, the proposed algorithm incrementally learns a switching structure in terms of a BT, that is able to handle the situations encountered. Exploiting the fact that BTs generalize And-Or-Trees and also provide very natural chromosome mappings for genetic pro- gramming, we combine the long term performance of Genetic Programming with a greedy element and use the And-Or analogy to limit the size of the resulting structure. Finally, earlier results on BTs enable us to provide certain safety guarantees for the resulting system. Using the testing environment Mario AI we compare our approach to alternative methods for learning BTs and Finite State Machines. The evaluation shows that the proposed approach generated solutions with better performance, and often fewer nodes than the other two methods. </div>
        
-       
+  <!--2-->     
        
 
         <li class="item journals">
             <a href="#" style="background-image: url('assets/images/pictures/sahale-wa.jpg')"></a>
             <div>
                 
-                <p>Byung-Cheol Min, Ramviyas Parasuraman, Sangjun Lee, Jin-Woo Jung, Eric T Matson. "A Directional Antenna based Leader-Follower Relay System for End-to-End Robot Communications", Robotics and Autonomous Systems (2017), vol 101, pp 57-73. DOI: https://doi.org/10.1016/j.robot.2017.11.013. Link to the <a href="https://www.sciencedirect.com/science/article/pii/S0921889017304141" target="_blank" rel="nofollow">Paper</a>.</p>
-                 <p> <a href="javascript:myFunc(2)"  class="btn btn-blue btn-effect">bibtex</a> <a href="javascript:myFunc_abs(2)" target="_blank" class="btn btn-blue btn-effect">abstract</a></p> 
+                <p>Byung-Cheol Min, Ramviyas Parasuraman, Sangjun Lee, Jin-Woo Jung, Eric T Matson. "A Directional Antenna based Leader-Follower Relay System for End-to-End Robot Communications", Robotics and Autonomous Systems (2017), vol 101, pp 57-73. DOI: https://doi.org/10.1016/j.robot.2017.11.013.</p>
+                 <p> <a href="javascript:myFunc(2)"  class="btn btn-blue btn-effect">PDF</a> <a href="javascript:myFunc_abs(2)" target="_blank" class="btn btn-blue btn-effect">Abstract</a>
+<a id="term3" href="https://www.sciencedirect.com/science/article/pii/S0921889017304141" "  class="btn btn-blue btn-effect" target="_blank" >Paper</a></p> 
             </div>
         </li>
         <div class="col-md-12 newcontent" id="bib2" style="display:none;"> <pre>@inproceedings{wikipediaforrobots-saxena-2016,<br>&nbsp;title={Wikipedia for Robots},<br>&nbsp;author={Ashutosh Saxena},<br>&nbsp;year={2016},<br>&nbsp;booktitle={MIT Technoogy Review}<br>}</pre></div>
        
        <div class="col-md-12 newcontent" id="abs2" style="display:none;"> </div>
+
+<!--3-->
          <li class="item journals">
             <a href="#" style="background-image: url('assets/images/pictures/sahale-wa.jpg')"></a>
             <div>
                
                 <p>Ramviyas Parasuraman, Sergio Caccamo, Fredrik  Båberg, Mark Neerincx, Petter Ögren. "A New UGV Teleoperation Interface for Improved Awareness of Network Connectivity and Physical Surroundings”, Journal of Human-Robot Interaction (ACM Transactions on Human-Robot Interaction), Vol.6, no.3, Dec 2017. DOI 10.5898/JHRI.6.3.Parasuraman. Link to the <a href="http://humanrobotinteraction.org/journal/index.php/HRI/article/view/341" target="_blank" rel="nofollow">Paper</a>.</p>
-                 <p> <a href="javascript:myFunc(3)"  class="btn btn-blue btn-effect">bibtex</a> <a href="javascript:myFunc_abs(3)" target="_blank" class="btn btn-blue btn-effect">abstract</a></p> 
+                 <p> <a href="javascript:myFunc(3)"  class="btn btn-blue btn-effect">PDF</a> <a href="javascript:myFunc_abs(3)" target="_blank" class="btn btn-blue btn-effect">Abstract</a>
+<a id="term3" href="http://humanrobotinteraction.org/journal/index.php/HRI/article/view/341" class="btn btn-blue btn-effect" target="_blank" >Paper</a>
+</p> 
             </div>
         </li>
         <div class="col-md-12 newcontent" id="bib3" style="display:none;"> <pre>@inproceedings{wikipediaforrobots-saxena-2016,<br>&nbsp;title={Wikipedia for Robots},<br>&nbsp;author={Ashutosh Saxena},<br>&nbsp;year={2016},<br>&nbsp;booktitle={MIT Technoogy Review}<br>}</pre></div>
@@ -305,9 +338,11 @@ a {
          <li class="item journals">
             <a href="#" style="background-image: url('assets/images/pictures/sahale-wa.jpg')"></a>
             <div>
-               
-                <p>Parasuraman, Ramviyas; Fabry, Thomas; Molinari, Luca; Kershaw, Keith; Castro, Mario D.; Masi, Alessandro; Ferre, Manuel. 2014. “A Multi-Sensor RSS Spatial Sensing-Based Robust Stochastic Optimization Algorithm for Enhanced Wireless Tethering.” Sensors 14, no. 12: 23970-24003. Link to the <a href="http://www.mdpi.com/1424-8220/14/12/23970/pdf" target="_blank" rel="nofollow">Paper</a>.</p>
-                 <p> <a href="javascript:myFunc(4)"  class="btn btn-blue btn-effect">bibtex</a> <a href="javascript:myFunc_abs(4)" target="_blank" class="btn btn-blue btn-effect">abstract</a></p> 
+       <!--4-->        
+                <p>Parasuraman, Ramviyas; Fabry, Thomas; Molinari, Luca; Kershaw, Keith; Castro, Mario D.; Masi, Alessandro; Ferre, Manuel. 2014. “A Multi-Sensor RSS Spatial Sensing-Based Robust Stochastic Optimization Algorithm for Enhanced Wireless Tethering.” Sensors 14, no. 12: 23970-24003. </p>
+                 <p> <a href="javascript:myFunc(4)"  class="btn btn-blue btn-effect">PDF</a> <a href="javascript:myFunc_abs(4)" target="_blank" class="btn btn-blue btn-effect">Abstract</a>
+
+<a id="term3" href="http://www.mdpi.com/1424-8220/14/12/23970/pdf"class="btn btn-blue btn-effect" target="_blank" >Paper</a></p> 
             </div>
         </li>
         <div class="col-md-12 newcontent" id="bib4" style="display:none;"> <pre>@inproceedings{wikipediaforrobots-saxena-2016,<br>&nbsp;title={Wikipedia for Robots},<br>&nbsp;author={Ashutosh Saxena},<br>&nbsp;year={2016},<br>&nbsp;booktitle={MIT Technoogy Review}<br>}</pre></div>
@@ -316,8 +351,13 @@ a {
          <li class="item journals">
             <a href="#" style="background-image: url('assets/images/pictures/sahale-wa.jpg')"></a>
             <div>
-               
+     <!--5-->          
                 <p>Ramviyas Parasuraman, Keith Kershaw, and Manuel Ferre. Experimental Investigation of Radio Signal Propagation in Scientific Facilities for Telerobotic Applications. Int J Adv Robot Syst, 2013, 10:364. doi: 10.5772/56847. Link to the <a href="http://journals.sagepub.com/doi/pdf/10.5772/56847" target="_blank" rel="nofollow">Paper.</a>.</p>
+
+
+                 <p> <a href="javascript:myFunc(4)"  class="btn btn-blue btn-effect">PDF</a> <a href="javascript:myFunc_abs(4)" target="_blank" class="btn btn-blue btn-effect">Abstract</a>
+
+<a id="term3" href="http://www.mdpi.com/1424-8220/14/12/23970/pdf"class="btn btn-blue btn-effect" target="_blank" >Paper</a></p> 
             </div>
         </li>
         <div class="col-md-12 newcontent" id="bib5" style="display:none;"> <pre>@inproceedings{wikipediaforrobots-saxena-2016,<br>&nbsp;title={Wikipedia for Robots},<br>&nbsp;author={Ashutosh Saxena},<br>&nbsp;year={2016},<br>&nbsp;booktitle={MIT Technoogy Review}<br>}</pre></div>
@@ -326,8 +366,13 @@ a {
          <li class="item journals">
             <a href="#" style="background-image: url('assets/images/pictures/sahale-wa.jpg')"></a>
             <div>
-                
-                <p>Ramviyas Parasuraman, Keith Kershaw, and Manuel Ferre. Experimental Investigation of Radio Signal Propagation in Scientific Facilities for Telerobotic Applications. Int J Adv Robot Syst, 2013, 10:364. doi: 10.5772/56847. Link to the <a href="http://journals.sagepub.com/doi/pdf/10.5772/56847" target="_blank" rel="nofollow">Paper.</a>.</p>
+      <!--6-->          
+                <p>Ramviyas Parasuraman, Keith Kershaw, and Manuel Ferre. Experimental Investigation of Radio Signal Propagation in Scientific Facilities for Telerobotic Applications. Int J Adv Robot Syst, 2013, 10:364. doi: 10.5772/56847. </p>
+
+
+                 <p> <a href="javascript:myFunc(4)"  class="btn btn-blue btn-effect">PDF</a> <a href="javascript:myFunc_abs(4)" target="_blank" class="btn btn-blue btn-effect">Abstract</a>
+
+<a id="term3" href="http://journals.sagepub.com/doi/pdf/10.5772/56847" class="btn btn-blue btn-effect" target="_blank" >Paper</a></p> 
             </div>
         </li>
         
@@ -338,7 +383,9 @@ a {
                 <p>Jonghoek Kim, Shaocheng Luo,  Ramviyas Parasuraman, Jun Han Bae, Eric T Matson, Byung-Cheol Min. "Bounded Distributed Multi-Robot Rendezvous Control based on Network Topology", <span class="rev1">Under Review</span> in the Adhoc Networks. </p>
             </div>
         </li>
-        
+      <!--7-->
+
+  
          <li class="item journals">
             <a href="#" style="background-image: url('assets/images/pictures/sahale-wa.jpg')"></a>
             <div>
