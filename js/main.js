@@ -326,7 +326,7 @@ function init() {
 
     // Let's also add a marker while we're at it
     var marker = new google.maps.Marker({
-        position: new google.maps.LatLng(40.430425, -86.912451),
+        position: new google.maps.LatLng(33.946084,-83.374132),
         map: map,
 		icon: 'img/icons/map-marker.png',
     });
