@@ -3,9 +3,9 @@
 .article-list-vertical{
     list-style:none;
     margin: 0 auto;
-    max-width: 900px;
+    max-width: 1200px;
     text-align: center;
-    padding: 0;
+    padding: 0px;
 }
 
 .article-list-vertical li{
@@ -20,9 +20,9 @@
 
     font: normal 13px sans-serif;
 
-    margin-bottom: 40px;
+    margin-bottom: 20px;
    // max-width: 575px;
-   max-width: 775px;
+   max-width: 900px;
 }
 
 /* Article photo */
@@ -41,7 +41,7 @@
     box-sizing: border-box;
 
     //max-width: 350px;
-    max-width: 550px;
+    max-width: 600px;
     padding-left: 10px;
 }
 
@@ -88,7 +88,7 @@
     }
 
     .article-list-vertical li{
-        max-width: 325px;
+        max-width: 350px;
     }
 
     .article-list-vertical li > a{
