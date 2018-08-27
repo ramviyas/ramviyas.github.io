@@ -1,0 +1,686 @@
+ 
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+    <head>
+    	<!-- meta character set -->
+        <meta charset="utf-8">
+		<!-- Always force latest IE rendering engine or request Chrome Frame -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Blue One Page HTML Template</title>		
+		<!-- Meta Description -->
+        <meta name="description" content="Blue One Page Creative HTML5 Template">
+        <meta name="keywords" content="one page, single page, onepage, responsive, parallax, creative, business, html5, css3, css3 animation">
+        <meta name="author" content="Muhammad Morshed">
+		
+		<!-- Mobile Specific Meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- CSS
+		================================================== -->
+		
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+		
+		<!-- Fontawesome Icon font -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+		<!-- bootstrap.min -->
+       
+		<!-- bootstrap.min -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- bootstrap.min -->
+  
+		<!-- bootstrap.min -->
+        <link rel="stylesheet" href="css/animate.css">
+		<!-- Main Stylesheet -->
+        <link rel="stylesheet" href="css/main.css">
+        
+        <link rel="stylesheet" href="assets/css/article-lists/article-list-vertical.css">
+
+		<!-- Modernizer Script for old Browsers -->
+        <script src="js/modernizr-2.6.2.min.js"></script>
+        
+        <style>
+			.navbar-inverse .navbar-nav > li > a
+		{
+			font-size:15.5px;
+			text-transform: none;
+		}
+		.subtitle
+		{
+			font-size:15.5px;
+			text-transform: none;
+			padding-left: 70px;
+			color: #ffffff;
+		}
+		#navigation
+		{
+			background-color:#000000;
+		}
+		.navbar-brand
+		{
+			    color: #337ab7;
+		}
+		#headerimage
+		{
+		    padding-left: 0px;	
+		}
+        #navigation
+        {
+			background-color:black;
+		}
+		#about
+		{
+			margin-top:50px;
+		}
+		#aboutnew
+		{
+			background-color:#009EE3;
+		}
+        
+       /* SIMLPE CSS RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body { line-height: 1; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after { content: ''; content: none; }
+/* remember to define focus styles! */
+:focus { outline: 0; }
+/* remember to highlight inserts somehow! */
+ins { text-decoration: none; }
+del { text-decoration: line-through; }
+/* tables still need 'cellspacing="0"' in the markup */
+table { border-collapse: collapse; border-spacing: 0; }
+/*- -*/
+/*- GENERIC BODY STYLES -*/
+body {
+	font: 12px/18px Arial, Helvetica, sans-serif;
+	color: #333;
+	background: #fff;
+}
+p { margin-bottom: 18px; }
+a { text-decoration: underline; }
+a:hover { text-decoration: none; }
+#container { width: 802px; margin: 0 auto; }
+/*- -*/
+/*- FILTER OPTIONS -*/
+ul#filterOptions {
+	width: 802px;
+	height: 52px;
+	margin: 30px 0;
+	overflow: hidden;
+}
+ul#filterOptions li { height: 52px; margin-right: 2px; float: left; }
+ul#filterOptions li a {
+	height: 50px;
+	padding: 0 20px;
+	border: 1px solid #999;
+	background: #cfcfcf;
+	color: #fff;
+	font-weight: bold;
+	line-height: 50px;
+	text-decoration: none;
+	display: block;
+}
+ul#filterOptions li a:hover { background: #c9c9c9; }
+ul#filterOptions li.active a { background: #999; }
+/*- -*/
+/*- OUR DATA HOLDER -*/
+#ourHolder { width: 800px; //height: 850px; overflow: hidden; }
+#ourHolder div.item {
+	width: 200px;
+	//height: 200px;
+	float: left;
+	text-align: center;
+}
+#ourHolder div.item h3 { margin-top: 10px; font-size: 16px; line-height: 20px; }
+/*- -*/
+.newcontent
+{
+	
+    border: 2px solid white;
+    font-size: 15px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+#nametitle
+{
+	color: #009EE3;
+	    text-decoration: none;
+}
+a {
+    text-decoration: none;
+}
+@media (max-width: 375px){
+
+    ul#filterOptions{
+        max-width: 360px;
+    }
+
+ ul#filterOptions li a {
+	height: 50px;
+	padding: 0 5px;
+	border: 1px solid #999;
+	background: #cfcfcf;
+	color: #fff;
+	font-weight: bold;
+	line-height: 50px;
+	text-decoration: none;
+	display: block;
+}   
+}
+</style>
+
+
+
+    </head>
+	
+    <body id="body">
+
+		<!-- preloader -->
+		<div id="preloader">
+            <div class="loder-box">
+            	<div class="battery"></div>
+            </div>
+		</div>
+		<!-- end preloader -->
+
+        <!--
+        Fixed Navigation
+        ==================================== -->
+        <header id="navigation" class="navbar-inverse navbar-fixed-top animated-header">
+            <div class="container">
+                <div class="navbar-header">
+                    <!-- responsive nav button -->
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+                    </button>
+					<!-- /responsive nav button -->
+					
+					<!-- logo -->
+					<h1 class="navbar-brand">
+						<a id="nametitle" href="http://npramviyas.com/">Ramviyas Nattamai Parasuraman<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="subtitle">Postdoctoral Research Associate</span></a>
+					</h1>
+					<!-- /logo -->
+                </div>
+
+				<!-- main nav -->
+                <nav class="collapse navbar-collapse navbar-right" role="navigation">
+                    <ul id="nav" class="nav navbar-nav">
+                        <li><a href="http://npramviyas.com/" target="_blank" rel="nofollow">Home</a></li>
+                        <li><a href="http://npramviyas.com/" target="_blank" rel="nofollow">About</a>
+                        
+                        </li>
+                        <li><a href="http://npramviyas.com/" target="_blank" rel="nofollow">Research</a></li>
+                        <li><a href="#body">Publications</a></li>
+                        <li><a href="http://npramviyas.com/" target="_blank" rel="nofollow">Teaching</a></li>
+                        <li><a href="http://npramviyas.com/" target="_blank" rel="nofollow">Professional Activities</a></li>
+                        <li><a href="http://npramviyas.com/" target="_blank" rel="nofollow">Contact</a></li>
+                        </ul>
+                </nav>
+				<!-- /main nav -->
+				
+            </div>
+        </header>
+        <!--
+        End Fixed Navigation
+        ==================================== -->
+		
+		<main class="site-content" role="main">
+			
+			<section id="about">
+		<div class="col-md-12" id="aboutnew">
+       <ul id="filterOptions">
+    <li class="active"><a href="#" class="all">All</a></li>
+    <li><a href="#" class="journals">Journals</a></li>
+    <li><a href="#" class="conferences">Conferences</a></li>
+    <li><a href="#" class="other">Others</a></li>
+  
+  </ul>
+    <ul class="article-list-vertical" id="ourHolder">
+
+        <li class="item journals" id="list1">
+            <a href="#" style="background-image: url('assets/images/pictures/sands-of-life.jpg')"></a>
+            <div>
+                
+               <p>Michele Colledanchise, Ramviyas Parasuraman, Petter Ögren. "Learning of Behavior Trees for Autonomous Agents", in IEEE Transactions on Games (2018). doi: 10.1109/TG.2018.2816806. Link to the <a href="https://ieeexplore.ieee.org/document/8319483/" target="_blank" rel="nofollow">Paper</a></p>
+               <p> <a href="javascript:myFunc(1)"  class="btn btn-blue btn-effect">bibtex</a> <a href="javascript:myFunc_abs(1)" target="_blank" class="btn btn-blue btn-effect">abstract</a></p> 
+            </div>
+        </li>
+       <div class="col-md-12 newcontent" id="bib1" style="display:none;"> <pre>@inproceedings{wikipediaforrobots-saxena-2016,<br>&nbsp;title={Wikipedia for Robots},<br>&nbsp;author={Ashutosh Saxena},<br>&nbsp;year={2016},<br>&nbsp;booktitle={MIT Technoogy Review}<br>}</pre></div>
+       
+       <div class="col-md-12 newcontent" id="abs1" style="display:none;"> </div>
+       
+       
+       
+
+        <li class="item journals">
+            <a href="#" style="background-image: url('assets/images/pictures/sahale-wa.jpg')"></a>
+            <div>
+                
+                <p>Byung-Cheol Min, Ramviyas Parasuraman, Sangjun Lee, Jin-Woo Jung, Eric T Matson. "A Directional Antenna based Leader-Follower Relay System for End-to-End Robot Communications", Robotics and Autonomous Systems (2017), vol 101, pp 57-73. DOI: https://doi.org/10.1016/j.robot.2017.11.013. Link to the <a href="https://www.sciencedirect.com/science/article/pii/S0921889017304141" target="_blank" rel="nofollow">Paper</a>.</p>
+                 <p> <a href="javascript:myFunc(2)"  class="btn btn-blue btn-effect">bibtex</a> <a href="javascript:myFunc_abs(2)" target="_blank" class="btn btn-blue btn-effect">abstract</a></p> 
+            </div>
+        </li>
+        <div class="col-md-12 newcontent" id="bib2" style="display:none;"> <pre>@inproceedings{wikipediaforrobots-saxena-2016,<br>&nbsp;title={Wikipedia for Robots},<br>&nbsp;author={Ashutosh Saxena},<br>&nbsp;year={2016},<br>&nbsp;booktitle={MIT Technoogy Review}<br>}</pre></div>
+       
+       <div class="col-md-12 newcontent" id="abs2" style="display:none;"> </div>
+         <li class="item journals">
+            <a href="#" style="background-image: url('assets/images/pictures/sahale-wa.jpg')"></a>
+            <div>
+               
+                <p>Ramviyas Parasuraman, Sergio Caccamo, Fredrik  Båberg, Mark Neerincx, Petter Ögren. "A New UGV Teleoperation Interface for Improved Awareness of Network Connectivity and Physical Surroundings”, Journal of Human-Robot Interaction (ACM Transactions on Human-Robot Interaction), Vol.6, no.3, Dec 2017. DOI 10.5898/JHRI.6.3.Parasuraman. Link to the <a href="http://humanrobotinteraction.org/journal/index.php/HRI/article/view/341" target="_blank" rel="nofollow">Paper</a>.</p>
+                 <p> <a href="javascript:myFunc(3)"  class="btn btn-blue btn-effect">bibtex</a> <a href="javascript:myFunc_abs(3)" target="_blank" class="btn btn-blue btn-effect">abstract</a></p> 
+            </div>
+        </li>
+        <div class="col-md-12 newcontent" id="bib3" style="display:none;"> <pre>@inproceedings{wikipediaforrobots-saxena-2016,<br>&nbsp;title={Wikipedia for Robots},<br>&nbsp;author={Ashutosh Saxena},<br>&nbsp;year={2016},<br>&nbsp;booktitle={MIT Technoogy Review}<br>}</pre></div>
+       
+       <div class="col-md-12 newcontent" id="abs3" style="display:none;"> </div>
+         <li class="item journals">
+            <a href="#" style="background-image: url('assets/images/pictures/sahale-wa.jpg')"></a>
+            <div>
+               
+                <p>Parasuraman, Ramviyas; Fabry, Thomas; Molinari, Luca; Kershaw, Keith; Castro, Mario D.; Masi, Alessandro; Ferre, Manuel. 2014. “A Multi-Sensor RSS Spatial Sensing-Based Robust Stochastic Optimization Algorithm for Enhanced Wireless Tethering.” Sensors 14, no. 12: 23970-24003. Link to the <a href="http://www.mdpi.com/1424-8220/14/12/23970/pdf" target="_blank" rel="nofollow">Paper</a>.</p>
+                 <p> <a href="javascript:myFunc(4)"  class="btn btn-blue btn-effect">bibtex</a> <a href="javascript:myFunc_abs(4)" target="_blank" class="btn btn-blue btn-effect">abstract</a></p> 
+            </div>
+        </li>
+        <div class="col-md-12 newcontent" id="bib4" style="display:none;"> <pre>@inproceedings{wikipediaforrobots-saxena-2016,<br>&nbsp;title={Wikipedia for Robots},<br>&nbsp;author={Ashutosh Saxena},<br>&nbsp;year={2016},<br>&nbsp;booktitle={MIT Technoogy Review}<br>}</pre></div>
+       
+       <div class="col-md-12 newcontent" id="abs4" style="display:none;"> </div>
+         <li class="item journals">
+            <a href="#" style="background-image: url('assets/images/pictures/sahale-wa.jpg')"></a>
+            <div>
+               
+                <p>Ramviyas Parasuraman, Keith Kershaw, and Manuel Ferre. Experimental Investigation of Radio Signal Propagation in Scientific Facilities for Telerobotic Applications. Int J Adv Robot Syst, 2013, 10:364. doi: 10.5772/56847. Link to the <a href="http://journals.sagepub.com/doi/pdf/10.5772/56847" target="_blank" rel="nofollow">Paper.</a>.</p>
+            </div>
+        </li>
+        <div class="col-md-12 newcontent" id="bib5" style="display:none;"> <pre>@inproceedings{wikipediaforrobots-saxena-2016,<br>&nbsp;title={Wikipedia for Robots},<br>&nbsp;author={Ashutosh Saxena},<br>&nbsp;year={2016},<br>&nbsp;booktitle={MIT Technoogy Review}<br>}</pre></div>
+       
+       <div class="col-md-12 newcontent" id="abs5" style="display:none;"> </div>
+         <li class="item journals">
+            <a href="#" style="background-image: url('assets/images/pictures/sahale-wa.jpg')"></a>
+            <div>
+                
+                <p>Ramviyas Parasuraman, Keith Kershaw, and Manuel Ferre. Experimental Investigation of Radio Signal Propagation in Scientific Facilities for Telerobotic Applications. Int J Adv Robot Syst, 2013, 10:364. doi: 10.5772/56847. Link to the <a href="http://journals.sagepub.com/doi/pdf/10.5772/56847" target="_blank" rel="nofollow">Paper.</a>.</p>
+            </div>
+        </li>
+        
+         <li class="item journals">
+            <a href="#" style="background-image: url('assets/images/pictures/sahale-wa.jpg')"></a>
+            <div>
+               
+                <p>Jonghoek Kim, Shaocheng Luo,  Ramviyas Parasuraman, Jun Han Bae, Eric T Matson, Byung-Cheol Min. "Bounded Distributed Multi-Robot Rendezvous Control based on Network Topology", <span class="rev1">Under Review</span> in the Adhoc Networks. </p>
+            </div>
+        </li>
+        
+         <li class="item journals">
+            <a href="#" style="background-image: url('assets/images/pictures/sahale-wa.jpg')"></a>
+            <div>
+                  
+                <p>Mohamed Haseeb and Ramviyas Parasuraman. “Wisture: RNN-based Learning of Wireless Signals for Gesture Recognition in Unmodified Smartphones”, <span class="rev">Under review</span> in the Neural Networks Journal. <a href="https://sites.google.com/site/npramviyas/Wisture_Preprint_Version.pdf?attredirects=0&amp;d=1" target="_blank">Download Preprint</a>. Github link to the <a href="https://github.com/mohaseeb/wisture" target="_blank" rel="nofollow">Wisture Source Code</a>. Android PlayStore Link for the <a href="https://play.google.com/store/apps/details?id=org.nebula.wisture" target="_blank">Wisture App</a>, and the <a href="https://play.google.com/store/apps/details?id=com.nebula.haseeb.winiff" target="_blank">Winiff App</a>.</p>
+            </div>
+        </li>
+        
+         <li class="item journals">
+            <a href="#" style="background-image: url('assets/images/pictures/sahale-wa.jpg')"></a>
+            <div>
+                  
+                <p>Danilo Tardioli, Ramviyas Parasuraman, Petter Ögren. "Pound: A multi-master ROS node for Reducing Delay and Jitter in Wireless Multi-Robot Networks", <span class="rev1">Under Review</span> in the Robotics and Autonomous Systems. Github link to the <a href="https://github.com/dantard/unizar-pound-ros-pkg"  target="_blank" rel="nofollow">source code of Pound</a>. <a href="https://arxiv.org/pdf/1707.07540"  target="_blank" rel="nofollow">Download Preprint</a>.</p>
+            </div>
+        </li>
+        
+         <li class="item journals">
+            <a href="#" style="background-image: url('assets/images/pictures/sahale-wa.jpg')"></a>
+            <div>
+                  
+                <p>Ramviyas Parasuraman, Petter Ögren. "Online Prediction of Wireless Connection Quality in Autonomous and Teleoperated Field Robots", Submitted to the Journal of Field <span class="rev2">Robotics</span>. 2016.</p>
+            </div>
+        </li>
+        <!--2-->
+         <li class="item conferences">
+            <a href="#" style="background-image: url('assets/images/pictures/sahale-wa.jpg')"></a>
+            <div>
+                  
+                <p>Ramviyas Parasuraman and Byung-Cheol Min. Consensus Control of Distributed Robots using Direction of Arrival of Wireless Signals, Int. Symp. on Distributed Autonomous Robotic Systems (DARS), Boulder, USA, Oct 15-17, 2018. <span class="rev1">(Under review)</span>.</p>
+            </div>
+        </li>
+        
+         <li class="item conferences">
+            <a href="#" style="background-image: url('assets/images/pictures/sahale-wa.jpg')"></a>
+            <div>
+                  
+                <p>Ramviyas Parasuraman, Petter Ögren, Byung-Cheol Min. Kalman filter based spatial prediction of wireless connectivity for autonomous robots and connected vehicles, IEEE Connected and Automated Vehicles Symposium (CAVS) 2018, Chicago, USA, August 27, 2018. <span class="rev1">(Under review)</span>.</p>
+            </div>
+        </li>
+        
+         <li class="item conferences">
+            <a href="#" style="background-image: url('assets/images/pictures/sahale-wa.jpg')"></a>
+            <div>
+                  
+                <p>Wonse Jo, Shyam Sundar Kannan, Ramviyas Parasuraman, and Byung-Cheol Min. Use of Tapping Sounds to Recognize Contact Material Types for Mobile Robots, 2018 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2018), Madrid, Spain, October 1 -5, 2018. <span class="rev1">(Under review)</span>.</p>
+            </div>
+        </li>
+         <li class="item conferences">
+            <a href="#" style="background-image: url('assets/images/pictures/sahale-wa.jpg')"></a>
+            <div>
+                  
+                <p>Yeonju Oh, Ramviyas Parasuraman, Tim McGraw, and Byung-Cheol Min. <a href="http://vam-hri.xyz/files/pdf/hri2018_edited.pdf" target="_blank" rel="nofollow"> 360 VR Based Robot Teleoperation Interface for Virtual Tour</a>, The 13th Annual ACM/IEEE International Conference on Human-Robot Interaction (HRI), Workshop on Virtual, Augmented, and Mixed Reality for Human-Robot Interactions (VAM-HRI), Chicago, Illinois, USA, March 5, 2018.</p>
+            </div>
+        </li>
+         <li class="item conferences">
+            <a href="#" style="background-image: url('assets/images/pictures/sahale-wa.jpg')"></a>
+            <div>
+                  
+                <p>Caccamo, Sergio; Parasuraman, Ramviyas; Freda, Luigi; Gianni, Mario; Ogren, Petter. <a href="http://ieeexplore.ieee.org/document/8206020/" target="_blank" rel="nofollow">RCAMP<span style="background-color:transparent">: Resilient Communication-Aware Motion Planner and Autonomous Repair of Wireless Connectivity in Mobile Robots</span></a>, IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2017, pp. 2153-0866.</p>
+            </div>
+        </li>
+         <li class="item conferences">
+            <a href="#" style="background-image: url('assets/images/pictures/sahale-wa.jpg')"></a>
+            <div>
+                  
+                <p>Caccamo, Sergio; Parasuraman, Ramviyas; Baberg, Fredrik; Ogren, Petter. "<a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7353987" target="_blank" rel="nofollow">Extending a UGV teleoperation FLC interface with wireless network connectivity information</a>," IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), vol., no., pp. 4305-4312, Sept. 28 2015-Oct. 2 2015.</p>
+            </div>
+        </li>
+         <li class="item conferences">
+            <a href="#" style="background-image: url('assets/images/pictures/sahale-wa.jpg')"></a>
+            <div>
+                  
+                <p>R.Parasuraman, T.Fabry, K.Kershaw, M.Ferre. <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?tp=&amp;arnumber=6799919"  rel="nofollow">Spatial sampling methods for improved communication for wireless relay robots</a>. International Conference on Connected Vehicles and Expo (ICCVE), vol., no., pp.874,880, 2-6 Dec. 2013. doi: 10.1109/ICCVE.2013.6799919.</p>
+            </div>
+        </li>
+         <li class="item conferences">
+            <a href="#" style="background-image: url('assets/images/pictures/sahale-wa.jpg')"></a>
+            <div>
+                  
+                <p>R.Parasuraman, P Pagala, K Kershaw, M Ferre. “<a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7280945"  target="_blank" rel="nofollow">Model based on-line energy prediction system for semi-autonomous mobile robots</a>“. IEEE International Conference on Intelligent Systems, Modelling and Simulation (ISMS), 27-19 Jan 2014. IEEE CPS.</p>
+            </div>
+        </li>
+         <li class="item conferences">
+            <a href="#" style="background-image: url('assets/images/pictures/sahale-wa.jpg')"></a>
+            <div>
+                  
+                <p>A. Owen-Hill, R.Parasuraman, M.Ferre, “<a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6719329"  rel="nofollow">Haptic teleoperation of mobile robots for augmentation of operator perception in environments with&nbsp;low-wireless&nbsp;signal</a>,”  IEEE International Symposium on Safety, Security, and Rescue Robotics (SSRR), vol., no., pp.1,7, 21-26 Oct. 2013. doi: 10.1109/SSRR.2013.6719329 .</p>
+            </div>
+        </li>
+         <li class="item conferences">
+            <a href="#" style="background-image: url('assets/images/pictures/sahale-wa.jpg')"></a>
+            <div>
+                  
+                <p>R.Parasuraman, P.Pagala, K.Kershaw, M.Ferre. <a href="http://link.springer.com/chapter/10.1007/978-3-642-32527-4_45"  rel="nofollow">Energy Management Module for Mobile Robots in Hostile Environments</a>. Advances in Autonomous Robotics, Lecture Notes in Computer Science Volume 7429, 2012, pp 430-431. Springer Berlin Heidelberg. doi: 10.1007/978-3-642-32527-4_45.</p>
+                
+             </div>   
+                
+         </li>
+			<li class="item conferences">
+            <a href="#" style="background-image: url('assets/images/pictures/sahale-wa.jpg')"></a>
+            <div>
+				<p>Abisekh, J.,Balaji, BS., Arvind S., and Ramviyas, NP. Onboard Dynamic Rail TrackSafety Monitoring System. International Conf. on Advanced Communication Systems 2007, Coimbatore, India. <a href="https://sites.google.com/site/npramviyas/arxiv-1212.0240.pdf?attredirects=0&amp;d=1" target="_blank">Download Paper PDF</a>.</p>
+            </div>
+        </li>
+        <!--3-->
+        
+         <li class="item other">
+            <a href="#" style="background-image: url('assets/images/pictures/sahale-wa.jpg')"></a>
+            <div>
+                
+                <p>Wonse Jo, Shyam Sundar Kannan, Ramviyas Parasuraman, and Byung-Cheol Min. “Development of Material Recognition Training System for Visually Impaired People.” In: Health and Disease: Science, Technology, Culture, and Policy. (West Lafayette, IN, USA). Purdue University. Mar. 2018. <a href="https://sites.google.com/site/npramviyas/2018_health%20and%20Disease%20Poster-tapping.pdf?attredirects=0&amp;d=1" target="_blank">Download Poster</a>.</p>
+            </div>
+        </li>
+         <li class="item other">
+            <a href="#" style="background-image: url('assets/images/pictures/sahale-wa.jpg')"></a>
+            <div>
+                  
+                <p>Ramviyas Parasuraman, Jonghoek Kim, Shaocheng Luo, and Byung-Cheol Min. “Hierarchical Tracking-based Multi-Point Rendezvous in Multi-Robot System.” In: Robots and Sensors for the Human Well-being (ROSE-HUB) Fall Meeting. (Denver, CO, USA). NSF. Nov. 2017. <a href="https://sites.google.com/site/npramviyas/2017Fall_RoSeHUBposterRendezvous_FINAL.pdf?attredirects=0&amp;d=1" target="_blank">Download Poster</a>.</p>
+            </div>
+        </li>
+         <li class="item other">
+            <a href="#" style="background-image: url('assets/images/pictures/sahale-wa.jpg')"></a>
+            <div>
+                  
+                <p>Jun Han Bae, Ramviyas Parasuraman, Wonse Jo, Arabinda Samantaray, Jee-Hwan Park, Hunjung Lim, and Byung-Cheol Min. “Development of Autonomous Robotic System for Algae Removal". 4th Annual Environmental Community Mixer, 15 Sep 2017, Purdue University, USA. <a href="https://sites.google.com/site/npramviyas/2017_ECMposterUSVAlgae.pdf?attredirects=0&amp;d=1" target="_blank">Download Poster</a>.</p>
+            </div>
+        </li>
+         <li class="item other">
+            <a href="#" style="background-image: url('assets/images/pictures/sahale-wa.jpg')"></a>
+            <div>
+                  
+                <p>Ramviyas Parasuraman, Sergio Caccamo, Luigi Freda, Mario Lunghi, Petter Ogren, Byung-Cheol Min. “An Approach to Retrieve from Communication Loss in Field Robots”. <a href="https://rss2017-rcw.mit.edu/" rel="nofollow"> <i>RSS 2017 Workshop on Robot Communication in the Wild: Meeting the Challenges of Real-world Systems</i></a>, 16 July 2017, MIT, Boston, USA. <a href="https://sites.google.com/site/npramviyas/AutoRecovery_vf.pdf?attredirects=0&amp;d=1" target="_blank">Download Poster</a>.</p>
+            </div>
+        </li>
+         <li class="item other">
+            <a href="#" style="background-image: url('assets/images/pictures/sahale-wa.jpg')"></a>
+            <div>
+                  
+                <p>Danilo Tardioli, Ramviyas Parasuraman, Petter Ogren, Byung-Cheol Min. “Pound: A multi-core ROS Node to Improve Wireless Communication Performance in Networked Robots”. <a href="https://rss2017-rcw.mit.edu/" rel="nofollow">RSS 2017 Workshop on Robot Communication in the Wild: Meeting the Challenges of Real-world Systems</a>, 16 July 2017. MIT, Boston, USA. <a href="https://sites.google.com/site/npramviyas/Pound_vf.pdf?attredirects=0&amp;d=1" target="_blank">Download <i>Pound</i> Poster</a>. Github link to the <a href="https://github.com/dantard/unizar-pound-ros-pkg" target="_blank" rel="nofollow">Pound ROS Package Code</a>.</p>
+            </div>
+        </li>
+         <li class="item other">
+            <a href="#" style="background-image: url('assets/images/pictures/sahale-wa.jpg')"></a>
+            <div>
+                  
+                <p>Ramviyas Parasuraman, Multi-Robot Rendezvous Control and Optimization, Midwest Robotics Workshop (MWRW), 18-19 May 2017, Chicago, USA. <a href="https://sites.google.com/site/npramviyas/MWRW17_Multi_Robot_Rendezvous_Poster.pdf?attredirects=0&amp;d=1" target="_blank">Download Poster</a></p>
+            </div>
+        </li>
+         <li class="item other">
+            <a href="#" style="background-image: url('assets/images/pictures/sahale-wa.jpg')"></a>
+            <div>
+                  
+                <p>R.Parasuraman, L.Molinari, A.Masi, A fast radio signal strength prediction algorithm for mobile robots in unknown environments. RSS 2014 <a href="goog_324993755">Workshop on Communication Aware Robotics: New Tools for Multi-Robot Networks, Autonomous Vehicles, and Localization (CarNet)</a>, 13 July 2014 UC Berkeley, USA. Download <a href="https://sites.google.com/site/npramviyas/Ramviyas_RSS_CarNet_2014_Poster.pdf?attredirects=0&amp;d=1" target="_blank">Poster PDF.</a>. Download <a href="https://sites.google.com/site/npramviyas/RSS_CarNet.pdf?attredirects=0&amp;d=1" target="_blank">Presentation</a>.
+            </div>
+        </li>
+         <li class="item other">
+            <a href="#" style="background-image: url('assets/images/pictures/sahale-wa.jpg')"></a>
+            <div>
+                  
+                <p>R.Parasuraman, K.Kershaw, M.Ferre. <a href="http://www.romin.upm.es/Puresafe_WS/"  rel="nofollow">A study on wireless communication for mobile robots in hostile environments</a>. Workshop on Telerobotics and Systems Engineering for Scientific Facilities, 4th October 2012, Madrid, Spain.</p>
+              </div>
+                
+                
+                </li>
+ <li class="item other">
+            <a href="#" style="background-image: url('assets/images/pictures/sahale-wa.jpg')"></a>
+            <div>
+				<p>R. Parasuraman, A. Jain, and B. Narayanasamy. Instrumental and Impedance Analysis of Nanoporous Alumina. International Conf. on Nanomaterials and its Applications 2007, Trichy, India. (Best Poster Award) <a href="https://sites.google.com/site/npramviyas/ICNA_2007.png?attredirects=0&amp;d=1" target="_blank">Download Poster</a>.</p>
+            </div>
+        </li>
+        <!--4-->
+         <li class="item other">
+            <a href="#" style="background-image: url('assets/images/pictures/sahale-wa.jpg')"></a>
+            <div>
+                  
+                <p>PURESAFE Consortium (Pierre Bonnal et al.), The <a href="http://opense.web.cern.ch/framework" target="_blank" rel="nofollow">OpenSE Framework</a> - an open, lean and participative approach to systems engineering for projects in scientific facilities. Feb 2016.</p>
+            </div>
+        </li>
+         <li class="item other">
+            <a href="#" style="background-image: url('assets/images/pictures/sahale-wa.jpg')"></a>
+            <div>
+                  
+                <p>Ramviyas Parasuraman, <a href="http://arxiv.org/abs/1508.03000"  target="_blank" rel="nofollow">Few common failure cases in mobile robots</a>, arXiv preprint cs.CV, arXiv:1508.03000, 2015. Download <a href="https://arxiv.org/pdf/1508.03000" target="_blank" rel="nofollow">Paper PDF</a>.</p>
+            </div>
+        </li>
+         <li class="item other">
+            <a href="#" style="background-image: url('assets/images/pictures/sahale-wa.jpg')"></a>
+            <div>
+                  
+                <p>Ramviyas Parasuraman. <a href="https://edms.cern.ch/ui/#!master/navigator/document?D:1740824822:1740824822:subDocs"  target="_blank" rel="nofollow">TIM robot pre-series energy management system specifications</a>. CERN EDMS 1318898, 2013, EDMS <a href="https://edms.cern.ch/ui/#!master/navigator/document?D:1740824822:1740824822:subDocs"  target="_blank" rel="nofollow">1296740 v2</a>. (Restricted Access. Available on Request).</a></p>
+            </div>
+        </li>
+         <li class="item other">
+            <a href="#" style="background-image: url('assets/images/pictures/sahale-wa.jpg')"></a>
+            <div>
+                  
+                <p>Ramviyas Parasuraman, A.Stadler. <a href="https://edms.cern.ch/ui/#!master/navigator/document?D:1036590998:1036590998:subDocs" rel="nofollow">&nbsp;Wireless Video transmission tests in ISOLDE</a>. CERN EDMS 1209799, 2012  (Restricted Access. Available on Request).</p>
+            </div>
+        </li>
+        
+         <li class="item other">
+            <a href="#" style="background-image: url('assets/images/pictures/sahale-wa.jpg')"></a>
+            <div>
+                  
+                <p> Ramviyas Parasuraman. <a href="https://edms.cern.ch/document/1326585/1"  rel="nofollow">Needs gathered for a mobile platform to be used in remote radiation survey and inspection applications at CERN</a>. CERN EDMS 1326585, 2011  (Restricted Access. Available on Request).</p>
+            </div>
+        </li>
+        <!--5-->
+        <li class="item other">
+            <a href="#" style="background-image: url('assets/images/pictures/sahale-wa.jpg')"></a>
+            <div>
+                  
+                <p>PhD thesis: <a href="http://oa.upm.es/33046/"  target="_blank" title="Wireless communication enhancement methods for mobile robots in radiation environments" rel="nofollow">Wireless communication enhancement methods for mobile robots in radiation environments</a>, Oct 2014, Universidad Politécnica de Madrid, Spain. <a href="https://cds.cern.ch/record/1956445" target="_blank" rel="nofollow">Link to the thesis at&nbsp;CERN library</a>. Download <a href="http://oa.upm.es/33046/1/RAMVIYAS_NATTANMAI_PARASURAMAN.pdf" target="_blank" rel="nofollow">Thesis PDF</a>.</p>
+            </div>
+        </li>
+        <li class="item other">
+            <a href="#" style="background-image: url('assets/images/pictures/sahale-wa.jpg')"></a>
+            <div>
+                  
+                <p>Masters thesis: <a href="http://arxiv.org/abs/1410.5600"  target="_blank" rel="nofollow">Mobility Enhancement for the Elderly</a>: Vision-based obstacle detection for electric wheelchairs, April 2008, IIT-Delhi (India) and EPFL (Switzerland). Download <a href="https://arxiv.org/pdf/1410.5600" target="_blank" rel="nofollow">Thesis PDF</a>.</p>
+            </div>
+        </li>
+        <li class="item other">
+            <a href="#" style="background-image: url('assets/images/pictures/sahale-wa.jpg')"></a>
+            <div>
+                  
+                <p>Bachelor thesis: Automated generation of VLSI standard cell libraries using Genetic Algorithms, May 2008, Thiagarajar College of Engineering, Madurai (India). Download <a href="https://www.researchgate.net/profile/Ramviyas_Parasuraman/publication/320766071_Automated_Generation_of_VLSI_Standard_Cell_Libraries_using_Genetic_Algorithms/links/59f9f2cf0f7e9b61546e4aea/Automated-Generation-of-VLSI-Standard-Cell-Libraries-using-Genetic-Algorithms.pdf" target="_blank" rel="nofollow">Thesis PDF</a>.</p>
+            </div>
+        </li>
+        <!--6-->
+        <li class="item other">
+            <a href="#" style="background-image: url('assets/images/pictures/sahale-wa.jpg')"></a>
+            <div>
+                  
+                <p>Mohamed Haseeb, Ramviyas Parasuraman, "Wi-Fi signal strength measurements from smartphone for various hand gestures", IEEE Dataport, 2018. [Online]. Available: <a href="http://dx.doi.org/10.21227/H2C362" rel="nofollow">http://dx.doi.org/10.21227/H2C362</a>. Accessed: Jan. 11, 2018.</p>
+            </div>
+        </li>
+        <li class="item other">
+            <a href="#" style="background-image: url('assets/images/pictures/sahale-wa.jpg')"></a>
+            <div>
+                  
+                <p>Ramviyas Parasuraman, Sergio Caccamo, Fredrik Baberg, Petter Ogren, CRAWDAD dataset kth/rss (v. 2016‑01‑05), <a href="https://doi.org/10.15783/C7088F" target="_blank" rel="nofollow">https://doi.org/10.15783/C7088F</a>, Jan 2016.</p>
+            </div>
+        </li>
+
+    </ul>
+
+</div>
+		
+		</section>
+		
+		</main>
+		
+		<footer id="footer">
+			<div class="container">
+				<div class="row text-center">
+					<div class="footer-content">
+						<!--<div class="wow animated fadeInDown">
+							<p>newsletter signup</p>
+							<p>Get Cool Stuff! We hate spam!</p>
+						</div>
+						<form action="#" method="post" class="subscribe-form wow animated fadeInUp">
+							<div class="input-field">
+								<input type="email" class="subscribe form-control" placeholder="Enter Your Email...">
+								<button type="submit" class="submit-icon">
+									<i class="fa fa-paper-plane fa-lg"></i>
+								</button>
+							</div>
+						</form>
+						<div class="footer-social">
+							<ul>
+								<li class="wow animated zoomIn"><a href="#"><i class="fa fa-thumbs-up fa-3x"></i></a></li>
+								<li class="wow animated zoomIn" data-wow-delay="0.3s"><a href="#"><i class="fa fa-twitter fa-3x"></i></a></li>
+								<li class="wow animated zoomIn" data-wow-delay="0.6s"><a href="#"><i class="fa fa-skype fa-3x"></i></a></li>
+								<li class="wow animated zoomIn" data-wow-delay="0.9s"><a href="#"><i class="fa fa-dribbble fa-3x"></i></a></li>
+								<li class="wow animated zoomIn" data-wow-delay="1.2s"><a href="#"><i class="fa fa-youtube fa-3x"></i></a></li>
+							</ul>
+						</div>-->
+						
+						<p>Last update: Jan 10 2018, Ramviyas Parasuraman. email: ramviyas at purdue .edu</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+		<!-- Essential jQuery Plugins
+		================================================== -->
+		<!-- Main jQuery -->
+        <script src="js/jquery-1.11.1.min.js"></script>
+		<!-- Twitter Bootstrap -->
+        <script src="js/bootstrap.min.js"></script>
+		<!-- Single Page Nav -->
+        <script src="js/jquery.singlePageNav.min.js"></script>
+	
+        <!-- jquery easing -->
+        <script src="js/jquery.easing.min.js"></script>
+        <!-- Fullscreen slider -->
+        <script src="js/jquery.slitslider.js"></script>
+        <script src="js/jquery.ba-cond.min.js"></script>
+		<!-- onscroll animation -->
+        <script src="js/wow.min.js"></script>
+		<!-- Custom Functions -->
+        <script src="js/main_new.js"></script>
+        <script type="text/javascript">
+$(document).ready(function() {
+	$('#filterOptions li a').click(function() {
+		// fetch the class of the clicked item
+		var ourClass = $(this).attr('class');
+		
+		// reset the active class on all the buttons
+		$('#filterOptions li').removeClass('active');
+		// update the active state on our clicked button
+		$(this).parent().addClass('active');
+		
+		if(ourClass == 'all') {
+			// show all our items
+			$('#ourHolder').children('li.item').show();	
+		}
+		else {
+			// hide all elements that don't share ourClass
+			$('#ourHolder').children('li:not(.' + ourClass + ')').hide();
+			// show all elements that do share ourClass
+			$('#ourHolder').children('li.' + ourClass).show();
+		}
+		return false;
+	});
+});
+
+function myFunc(a)
+{
+	var x = document.getElementById("bib"+a);
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+function myFunc_abs(a)
+{
+	var x = document.getElementById("abs"+a);
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+
+</script>
+    </body>
+</html>
