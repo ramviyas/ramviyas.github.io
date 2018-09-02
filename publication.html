@@ -81,7 +81,12 @@
 		{
 			background-color:#009EE3;
 		}
-        
+        		.article-list-vertical li > a
+		{
+		background-size:contain !important;
+		background-repeat:no-repeat;
+		background-position: center;
+		}
        /* SIMLPE CSS RESET */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -126,10 +131,11 @@ a:hover { text-decoration: none; }
 /*- -*/
 /*- FILTER OPTIONS -*/
 ul#filterOptions {
-	width: 802px;
+	//width: 802px;
 	height: 52px;
 	margin: 30px 0;
 	overflow: hidden;
+          display:inline-block
 }
 ul#filterOptions li { height: 52px; margin-right: 2px; float: left; }
 ul#filterOptions li a {
@@ -165,6 +171,10 @@ ul#filterOptions li.active a { background: #999; }
     margin-bottom: 10px;
 
 }
+.External
+{
+color:#FFDE00;
+}
 #term1,#term2,#term3,#term4
 {
 margin-left:0px;
@@ -173,8 +183,8 @@ margin-right:10px;
 }
 #fil
 {
-margin-left:300px;
-margin-bottom:20px;
+//margin-left:300px;
+text-align:center;
 }
 #nametitle
 {
@@ -186,11 +196,11 @@ a {
 }
 .btn-blue
 {
-padding:9px 30px;
+padding:5px 20px;
 }
 .btn-effect:hover, .btn-effect:focus, .btn-effect:active
 {
-padding:9px 30px;
+padding:5px 20px;
 }
 .article-list-vertical li div p
 {
@@ -199,6 +209,7 @@ font-weight:bold;
 .article-list-vertical li > a
 {
 width:160px;
+height:170px;
 }
 @media (max-width: 375px){
 
@@ -308,7 +319,7 @@ width:160px;
 
 
 
-<br/> <b> Please visit my <a class="external" href="https://scholar.google.com/citations?user=gmhcslQAAAAJ&hl=en&oi=ao" target="_blank_">Google Scholar</a> page for updated list of publications and citation metrics.</b><br/><br/>
+<br/><p style="font-size:15px;"> <b> Please visit my <a class="external" style="color:#FFDE00;font-weight:bold;" href="https://scholar.google.com/citations?user=gmhcslQAAAAJ&hl=en&oi=ao" target="_blank_">Google Scholar</a> page for updated list of publications and citation metrics.</b></p><br/><br/>
 
 <!--Journals-->
 
@@ -396,7 +407,7 @@ width:160px;
         </li>
         <div class="col-md-12 newcontent" id="bib4" style="display:none;"> <pre>@inproceedings{wikipediaforrobots-saxena-2016,<br>&nbsp;title={Wikipedia for Robots},<br>&nbsp;author={Ashutosh Saxena},<br>&nbsp;year={2016},<br>&nbsp;booktitle={MIT Technoogy Review}<br>}</pre></div>
        
-       <div class="col-md-12 newcontent" id="abs4" style="display:none;"> The reliability of wireless communication in a network of mobile wireless robot nodes depends on the received radio signal strength (RSS). When the robot nodes are deployed in hostile environments with ionizing radiations (such as in some scientific facilities), there is a possibility that some electronic components may fail randomly (due to radiation effects), which causes problems in wireless connectivity. The objective of this paper is to maximize robot mission capabilities by maximizing the wireless network capacity and to reduce the risk of communication failure. Thus, in this paper, we consider a multi-node wireless tethering structure called the ìserver-relay-clientî framework that uses (multiple) relay nodes in between a server and a client node. We propose a robust stochastic optimization (RSO) algorithm using a multi-sensor-based RSS sampling method at the relay nodes to efficiently improve and balance the RSS between the source and client nodes to improve the network capacity and to provide redundant networking abilities. We use pre-processing techniques, such as exponential moving averaging and spatial averaging filters on the RSS data for smoothing. We apply a receiver spatial diversity concept and employ a position controller on the relay node using a stochastic gradient ascent method for self-positioning the relay node to achieve the RSS balancing task. The effectiveness of the proposed solution is validated by extensive simulations and field experiments in CERN facilities. For the field trials, we used a youBot mobile robot platform as the relay node, and two stand-alone Raspberry Pi computers as the client and server nodes. The algorithm has been proven to be robust to noise in the radio signals and to work effectively even under non-line-of-sight conditions.</div>
+       <div class="col-md-12 newcontent" id="abs4" style="display:none;"> The reliability of wireless communication in a network of mobile wireless robot nodes depends on the received radio signal strength (RSS). When the robot nodes are deployed in hostile environments with ionizing radiations (such as in some scientific facilities), there is a possibility that some electronic components may fail randomly (due to radiation effects), which causes problems in wireless connectivity. The objective of this paper is to maximize robot mission capabilities by maximizing the wireless network capacity and to reduce the risk of communication failure. Thus, in this paper, we consider a multi-node wireless tethering structure called the  server-relay-client  framework that uses (multiple) relay nodes in between a server and a client node. We propose a robust stochastic optimization (RSO) algorithm using a multi-sensor-based RSS sampling method at the relay nodes to efficiently improve and balance the RSS between the source and client nodes to improve the network capacity and to provide redundant networking abilities. We use pre-processing techniques, such as exponential moving averaging and spatial averaging filters on the RSS data for smoothing. We apply a receiver spatial diversity concept and employ a position controller on the relay node using a stochastic gradient ascent method for self-positioning the relay node to achieve the RSS balancing task. The effectiveness of the proposed solution is validated by extensive simulations and field experiments in CERN facilities. For the field trials, we used a youBot mobile robot platform as the relay node, and two stand-alone Raspberry Pi computers as the client and server nodes. The algorithm has been proven to be robust to noise in the radio signals and to work effectively even under non-line-of-sight conditions.</div>
 
 
          <li class="item journals">
@@ -511,7 +522,7 @@ width:160px;
         </li>
 
 
-<div class="col-md-12 newcontent" id="abs11" style="display:none;"> This paper proposes a new Kalman filter based online framework to estimate the spatial wireless connectivity in terms of received signal strength (RSS), which is composed of path loss and the shadow fading variance of a wireless channel in autonomous vehicles. The path loss is estimated using a localized least squares method and the shadowing effect is predicted with an empirical (exponential) variogram. A discrete Kalman Filter is used to fuse these two models into a statespace formulation. The approach is unique in a sense that it is online and does not require the exact source location to be known apriori. We evaluated the method using real-world measurements dataset from both indoors and outdoor environments. The results show significant performance improvements compared to state-of-the-art methods using Gaussian processes or Kriging interpolation algorithms. We are able to achieve a mean prediction accuracy of up to 96% for predicting RSS as far as 20 meters ahead in the robotís trajectory.</div>
+<div class="col-md-12 newcontent" id="abs11" style="display:none;"> This paper proposes a new Kalman filter based online framework to estimate the spatial wireless connectivity in terms of received signal strength (RSS), which is composed of path loss and the shadow fading variance of a wireless channel in autonomous vehicles. The path loss is estimated using a localized least squares method and the shadowing effect is predicted with an empirical (exponential) variogram. A discrete Kalman Filter is used to fuse these two models into a statespace formulation. The approach is unique in a sense that it is online and does not require the exact source location to be known apriori. We evaluated the method using real-world measurements dataset from both indoors and outdoor environments. The results show significant performance improvements compared to state-of-the-art methods using Gaussian processes or Kriging interpolation algorithms. We are able to achieve a mean prediction accuracy of up to 96% for predicting RSS as far as 20 meters ahead in the robot s trajectory.</div>
 
         
                 <!--12-->
@@ -673,7 +684,7 @@ width:160px;
             <a href="#" style="background-image: url('assets/images/pictures/health2018.png')"></a>
             <div>
                 
-                <p>Wonse Jo, Shyam Sundar Kannan, Ramviyas Parasuraman, and Byung-Cheol Min. ‚ÄúDevelopment of Material Recognition Training System for Visually Impaired People.ù In: Health and Disease: Science, Technology, Culture, and Policy. (West Lafayette, IN, USA). Purdue University. Mar. 2018. <a href="https://sites.google.com/site/npramviyas/2018_health%20and%20Disease%20Poster-tapping.pdf?attredirects=0&amp;d=1" target="_blank">Download Poster</a>.</p>
+                <p>Wonse Jo, Shyam Sundar Kannan, Ramviyas Parasuraman, and Byung-Cheol Min. ‚ÄúDevelopment of Material Recognition Training System for Visually Impaired People.  In: Health and Disease: Science, Technology, Culture, and Policy. (West Lafayette, IN, USA). Purdue University. Mar. 2018. <a href="https://sites.google.com/site/npramviyas/2018_health%20and%20Disease%20Poster-tapping.pdf?attredirects=0&amp;d=1" target="_blank">Download Poster</a>.</p>
             </div>
         </li>
          <li class="item poster">
