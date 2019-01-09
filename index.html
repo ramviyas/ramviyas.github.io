@@ -24,7 +24,7 @@
 <meta name="title" content="Ramviyas Nattanmai Parasuraman, Heterogeneous Robotics Research Lab at UGA">
 
         <meta name="description" content="Ramviyas Nattanmai Parasuraman, Heterogeneous Robotics Research Lab at UGA">
-        <meta name="keywords" content="Ramviyas, Nattanmai, Parasuraman, Robotics Research Lab, University of Georgia, Networked Robots, Robot Networks, Heterogeneous Robotics Research Lab, Robotics, Networks, Heterogeneous, Research, Lab, UGA, Robotics Research, Intelligent Robots, Networks, Nuclear Robotics, Multi Robot Systems, Consensus Control">
+        <meta name="keywords" content="Ramviyas, Nattanmai, Parasuraman, Robotics Research Lab, University of Georgia, Networked Robots, Robot Networks, Heterogeneous Robotics Research Lab, HeRo Lab, Robotics, Networks, Heterogeneous, Research, Lab, UGA, Robotics Research, Intelligent Robots, Networks, Nuclear Robotics, Multi Robot Systems, Consensus Control">
         <meta name="author" content="Ramviyas Parasuraman">
 
 		<!-- Mobile Specific Meta -->
@@ -80,8 +80,14 @@
 		}
 		#navigation
 		{
-			background-color:#000000;
+			background-color:#2e2e2e;
 		}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus
+{
+background-color:#2e2e2e;
+}
+
 		.navbar-brand
 		{
 			    color: #337ab7;
@@ -105,20 +111,22 @@ color: #009EE3;
     font-weight: bold;
 }
 #research {
-    background-image: url(http://npramviyas.com/img/parallax/testimonial.jpg);
+    //background-image: url(http://npramviyas.com/img/parallax/testimonial.jpg);
     padding: 0;
     color: #fff;
 }
 
 #teaching {
-    background-image: url(img/parallax/testimonial.jpg);
+    //background-image: url(img/parallax/testimonial.jpg);
     padding: 0;
     color: #fff;
 }
 #teaching .overlay {
-    background-color: rgba(15,155,224, 0.78);
+    background-color: #009EE3;
     padding: 70px 0 40px;
 }
+
+
 a {
     color: #FFDE00;
 }
@@ -150,7 +158,7 @@ color: #BE2C55;
 }
 #headerimage
 {
-	margin-top:150px;
+	margin-top:120px;
 
 }
 .sl-slide,
@@ -170,7 +178,7 @@ color: #BE2C55;
 }
 #home-slider
 {
-	height:350px !important;
+	height:330px !important;
 	background-color:#ffffff;
 }
 #news
@@ -247,6 +255,25 @@ color: #BE2C55;
 {
 	height:200px;
 }
+
+.sec-title h3 {
+    color: #ffffff;
+    font-size: 36px;
+    margin: 0 0 30px;
+    padding-bottom: 30px;
+    position: relative;
+    text-transform: uppercase;
+}
+.sec-title h3:after {
+    border-bottom: 1px solid #ffffff;
+    content: "";
+    display: block;
+    left: 45%;
+    bottom: 0;
+    position: absolute;
+    width: 115px;
+}
+
 	</style>
     </head>
 
@@ -313,8 +340,8 @@ color: #BE2C55;
 		<section id="home-slider"style="height: 350px !important; " >
       <div class="container">
         <div class="row">
-			<div id="headerimage" class="col-md-8 col-md-offset-1 wow animated fadeInRight">
-				<img src="img/Webpage_title_picture2.jpg" class="img-responsive">
+			<div id="headerimage" class="col-md-7 col-md-offset-1 wow animated fadeInRight">
+				<img src="img/Webpage_title_picture3.jpg" class="img-responsive">
          <!--   <div id="slider" class="sl-slider-wrapper">
 
 				<div class="sl-slider">
@@ -399,7 +426,7 @@ color: #BE2C55;
 			<!-- /slider-wrapper -->
 			</div>
 
-			<div class="col-md-3 wow animated fadeInLeft">
+			<div class="col-md-4 wow animated fadeInLeft">
 			<div id="news" class="parallax" >
 				<div class="overlay">
 
@@ -639,14 +666,20 @@ For full list of publication <a href="publications.html">click here</a>
 				<div class="overlay">
 				<div class="container">
 					<div class="row">
-						<h3 class="text-center" id="researchtitle" >Research</h3>
+						
+<div class="sec-title text-center wow animated fadeInDown">
+<h2 class="text-center" id="researchtitle" >Research</h2>
+
+						</div>
+
+
 						<p id="page1">My research interests are the following:</p>
 
 <ul id="page2">
- 	<li id="page3">Control and Communication of Mobile Robots and Multi-Robot (Networked) Systems;</li>
- 	<li id="page3">Machine Learning based Applications in Robotics and Wireless Communications (for perception, classification, and activity recognition).</li>
+ 	<b><li id="page3">Control and Communication of Heterogeneous Mobile Robots and Networked Multi-Robot Systems;</li>
+ 	<li id="page3">Machine Learning based Applications in Robotics and Wireless Communications (for perception, classification, and activity recognition).</li></b>
 </ul>
-<p id="page4">Please see the below links for more details on my research works.</p>
+<br>
 <div class="col-md-6 wow animated fadeInLeft">
 							<div class="recent-works">
 								<h3 id="researchtitle">Robot Control and Communication</h3>
@@ -743,10 +776,22 @@ For full list of publication <a href="publications.html">click here</a>
 								<div class="testimonial-item">
 
 									<div class="clearfix">
-										<h2 class="text-center">Teaching Activities</h2>
+										
+<div class="sec-title text-center wow animated fadeInDown">
+									<h3 class="text-center">Teaching</h3>
 
-<p class="tab2"> I am currrently teaching the <a href="csci_x530.html">CSCI/ATRI 4530/6530 Introduction to Robotics</a> course at UGA. </p> <br/>
-<p>Previously, I was the course responsible and teacher of the masters-level course "<a href="http://www.kth.se/student/kurser/kurs/EL2310?l=en" rel="nofollow">EL2310</a>: Scientific Programming" in Fall 2015 (with <a href="http://www.yaseminbekiroglu.com/" target="_blank" rel="nofollow">Dr.Yasemin Bokiroglu</a>) and in Fall 2016 (with <a href="https://people.kth.se/~hkarao/index.html" target="_blank" rel="nofollow">Dr.Hakan Karao</a>) at KTH. The goal of this course is to provide the participants with a basic knowledge of programming in general and specifically in MATLAB, C and C++. The course materials, lecture notes, and schedule can be accessed <a href="http://www.csc.kth.se/~yaseminb/el2310.html" target="_blank" rel="nofollow">here.</a>. </p>
+						</div>
+
+
+<p class="tab2"> <b> (New course) Spring 2019: <a href="csci_8535.html">CSCI 8535 Multi Robot System </a> course at UGA. </b> </p> <br/>
+
+<p class="tab2"> Fall 2018: <a href="csci_x530.html">CSCI 4530/6530 Introduction to Robotics</a> course at UGA. </p> <br/>
+
+<br>
+
+
+<p>Previously, I was the course responsible and teacher of the masters-level course "<a href="http://www.kth.se/student/kurser/kurs/EL2310?l=en" rel="nofollow">EL2310</a>: Scientific Programming" in Fall 2015 (with <a href="http://www.yaseminbekiroglu.com/" target="_blank" rel="nofollow">Dr.Yasemin Bokiroglu</a>) and in Fall 2016 (with <a href="https://people.kth.se/~hkarao/index.html" target="_blank" rel="nofollow">Dr.Hakan Karao</a>) at KTH. 
+The goal of this course is to provide the participants with a basic knowledge of programming in general and specifically in MATLAB, C and C++. The course materials, lecture notes, and schedule can be accessed <a href="http://www.csc.kth.se/~yaseminb/el2310.html" target="_blank" rel="nofollow">here.</a>. </p>
 
 									</div>
 								</div>
@@ -841,10 +886,10 @@ University. <br />
 
 
 
-<p>I'm setting up a new Collaborative Heterogeneous Robotics research lab at UGA. I'll update soon on the lab website and information.</p><br /><br />
+<p>I'm setting up a new Heterogeneous Robotics research lab at UGA. I'll update soon on the lab website and information.</p><br /><br />
 
 <p id="tetclr">Recruiting Students:</p>
-<p id="tab_2">I am looking for highly motivated graduate students with research interests in Robotics and Control/Communications. I have funding for two Ph.D. positions. Please send me an email if you are interested in working with me!</p>
+<p id="tab_2">I am looking for highly motivated graduate students with research interests in Heterogeneous Robotics and Control/Communications. Please send me an email with a breif statement of interest and your CV, if you are interested in working with me!</p>
 
 
 						</div>
@@ -909,18 +954,29 @@ University. <br />
 						       	<button type="submit" id="submit" class="btn btn-blue btn-effect">Send</button>
 							</form>-->
 
-							<section id="google-map">
-							<div id="map-canvas" class="wow animated fadeInUp"></div>
+<section id="google-map">
+							<div id="map-canv" class="wow animated fadeInUp">
+<div class="mapouter"><div class="gmap_canvas"><iframe width="650" height="482" id="gmap_canvas" src="https://maps.google.com/maps?q=Office%3A%20519%2C%20Boyd%20GSRC%2C%20University%20of%20Georgia%2C%20Athens%2C%20GA%2030602%2C%20USA&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net"></a></div>
+              </div>
 							</section>
 						</div>
 
 						<div class="col-md-5 wow animated fadeInRight">
 							<address class="contact-details">
 
-								<p><i class="fa fa-pencil"></i>Office: 519, Boyd GSRC,<span>University of Georgia,</span><span>Athens, GA 30602, USA </span></p><br>
+
+<p><i class="fa fa-envelope"></i>ramviyas AT uga dotedu</p><br>
+<p><i class="fa fa-phone"></i>Phone: (706) 542 2911 </p><br>
+
+								<p><i class="fa fa-pencil"></i>Office: 520 Boyd Graduate Studies Research Center, <span>Department of Computer Science,</span> <span>University of Georgia,</span><span>Athens, GA 30602, USA </span></p><br>
+
+								<p><i class="fa fa-pencil"></i>Director, Heterogeneous Robotics (HeRo) Research Lab,
+<span> 519 Boyd Graduate Studies Research Center. </span> </p><br> <br>
+
+				<img src="img/uga_cs_logo.png" class="img-responsive">
+
 								
-								<p><i class="fa fa-envelope"></i>ramviyas AT uga.edu</p>
-<p><i class="fa fa-phone"></i>Phone: (706) 542 2911 </p>
+								
 							</address>
 						</div>
 
@@ -961,7 +1017,7 @@ University. <br />
 							</ul>
 						</div>
 
-						<p>Last update: Aug 24, 2018, Ramviyas Parasuraman</p>
+						<p>Last update: Jan 9, 2019, Ramviyas Parasuraman</p>
 					</div>
 				</div>
 			</div>
