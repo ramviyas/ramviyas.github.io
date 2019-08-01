@@ -1,0 +1,818 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+    <head>
+    	<!-- meta character set -->
+        <meta charset="utf-8">
+		<!-- Always force latest IE rendering engine or request Chrome Frame -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Ramviyas Nattamai Parasuraman</title>
+		<!-- Meta Description -->
+<meta name="title" content="Ramviyas Nattanmai Parasuraman, Introduction to Robotics Course">
+
+        <meta name="description" content="Ramviyas Nattanmai Parasuraman, Heterogeneous Robotics Research Lab at UGA">
+        <meta name="keywords" content="Ramviyas, Nattanmai, Parasuraman, Multi Robot System, Graduate Course, Robotics Research Lab, University of Georgia, Networked Robots, Robot Networks, Heterogeneous Robotics Research Lab, HeRo Lab, Robotics, Networks, Heterogeneous, Research, Lab, UGA, Robotics Research, Intelligent Robots, Networks, Nuclear Robotics, Multi Robot Systems, Consensus Control">
+        <meta name="author" content="Ramviyas Parasuraman">
+
+
+		<!-- Mobile Specific Meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- CSS
+		================================================== -->
+
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+
+		<!-- Fontawesome Icon font -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+		<!-- bootstrap.min -->
+        <link rel="stylesheet" href="css/jquery.fancybox.css">
+		<!-- bootstrap.min -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- bootstrap.min -->
+        <link rel="stylesheet" href="css/owl.carousel.css">
+		<!-- bootstrap.min -->
+        <link rel="stylesheet" href="css/slit-slider.css">
+		<!-- bootstrap.min -->
+        <link rel="stylesheet" href="css/animate.css">
+		<!-- Main Stylesheet -->
+        <link rel="stylesheet" href="css/main.css">
+          <link rel="stylesheet" href="assets/css/article-lists/article-list-vertical.css">
+
+
+		<!-- Modernizer Script for old Browsers -->
+        <script src="js/modernizr-2.6.2.min.js"></script>
+
+        <style>
+			.navbar-inverse .navbar-nav > li > a
+		{
+			font-size:15.5px;
+			text-transform: none;
+		}
+		.subtitle
+		{
+					font-size:14.5px;
+			text-transform: none;
+			padding-left: 88px;
+			color: #ffffff;
+
+		}
+		#navigation
+		{
+			background-color:#2e2e2e;
+		}
+		.navbar-brand
+		{
+			    color: #337ab7;
+		}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus
+{
+background-color:#2e2e2e;
+}
+
+		#headerimage
+		{
+		    padding-left: 0px;
+		}
+     		#about
+		{
+			margin-top:50px;
+
+		}
+		#aboutnew
+		{
+			background-color:#009EE3;
+		}
+    /* tables still need 'cellspacing="0"' in the markup */
+table { border-collapse: collapse; border-spacing: 0; }
+/*- -*/
+/*- GENERIC BODY STYLES -*/
+body {
+	font-family:  Arial, Helvetica, sans-serif;
+	color: #333;
+	//background: blue;
+
+}
+p { margin-bottom: 18px;font-size:17px; }
+a { text-decoration: underline; }
+a:hover { text-decoration: none; }
+#container { width: 802px; margin: 0 auto; }
+/*- -*/
+.text-danger
+{
+  color:black;
+}
+.External
+{
+color:#FFDE00;
+}
+
+.newcontent
+{
+
+    border: 2px solid white;
+    font-size: 15px;
+    padding: 15px;
+    margin-bottom: 10px;
+
+}
+
+#nametitle
+{
+	color: #ffffff;
+	    text-decoration: none;
+}
+a {
+    text-decoration: none;
+}
+.lead1
+{
+
+  color:#FFDE00;
+  font-size:20px;
+}
+a.text-secondary
+{
+  color:#FFDE00;
+}
+.red
+{
+  color:red;
+
+}
+.green
+{
+  color: rgb(0, 255, 255);
+}
+.blue
+{
+  color: rgb(0, 255, 255);
+}
+.table th
+{
+  color:brown;
+  border:1px solid #ffffff;
+}
+td
+{
+  border:1px solid #ffffff;
+}
+.table
+{
+border:1px solid #ffffff;
+
+}
+</style>
+
+
+
+    </head>
+
+
+
+    <body id="body">
+
+		<!-- preloader -->
+		<div id="preloader">
+            <div class="loder-box">
+            	<div class="battery"></div>
+            </div>
+		</div>
+		<!-- end preloader -->
+
+        <!--
+        Fixed Navigation
+        ==================================== -->
+        <header id="navigation" class="navbar-inverse navbar-fixed-top animated-header">
+            <div class="container">
+                <div class="navbar-header">
+                    <!-- responsive nav button -->
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+                    </button>
+					<!-- /responsive nav button -->
+
+					<!-- logo -->
+					<h1 class="navbar-brand">
+						<a id="nametitle" href="index.html#body">Ramviyas Nattamai Parasuraman<br />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class="subtitle">ASSISTANT PROFESSOR, <a class="External" href="http://www.cs.uga.edu">UGA CS</a></span></a>
+					</h1>
+					<!-- /logo -->
+                </div>
+
+				<!-- main nav -->
+                <nav class="collapse navbar-collapse navbar-right" role="navigation">
+                    <ul id="nav" class="nav navbar-nav">
+                        <li><a class="external" href="index.html#body"><b>Home</b></a></li>
+                        <li><a class="external" href="index.html#about"><b>About</b></a>
+
+                        </li>
+                        <li><a class="external" href="index.html#research"><b>Research</b></a></li>
+                        <li><a class="external" href="publications.html"><b>Publications</b></a></li>
+                        <li><a class="external" href="index.html#teaching"><b>Teaching</b></a></li>
+                        <li><a class="external" href="index.html#professional"><b>Research Lab</b></a></li>
+                        <li><a class="external" href="index.html#contact"><b>Contact</b></a></li>
+                    </ul>
+                </nav>
+				<!-- /main nav -->
+
+            </div>
+        </header>
+        <!--
+        End Fixed Navigation
+        ==================================== -->
+
+		<main class="site-content" role="main">
+
+			<section id="about">
+		<div class="col-md-12" id="aboutnew">
+
+
+
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h1 class=""><strong><font color="white">CSCI 8535: Multi Robot Systems (Spring 2019)</font></strong> <br><br>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="py-0">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <p class="lead1">
+                  <b>Instructor: <a class="External" href="index.html"> Ramviyas N. Parasuraman</a> </b>
+                  <br> </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="py-0">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <p class="lead1">
+                  <b>Time and Location of Lectures:</b>
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <p class="">
+                  Tuesday & Thursday (3:30-4:45 PM) at Boyd #201, Wednesday (3.35-4.25 PM) at Boyd #210.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <p class="lead1">
+                  <b>Office Hours and Location </b>
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <p class="">Tuesday & Thursday 1-2 PM or by an email appointment &nbsp;
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <p class="lead1">
+                  <b>Course Overview </b>
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <p class="">
+This is primarily a research oriented, seminar-style course covering the topics of control, communication, cooperation, and coordination aspects in multi-robot systems. It enables students to understand, devise, and solve problems in multi-robot systems and the course will have project-based assignments.
+                      <br> </p>
+
+                <p class="">
+Multi-robot systems have potential in applications such as search and rescue, autonomous exploration, sensing and communication infrastructure, transportation, etc. Specifically, coordinating a group of robots involves repetitive tasks of rendezvous, formation control, and flocking of the distributed robots. Multi-robot systems are finding synergies in multiple relevant research areas such as self-driving connected cars and industrial/logistic robotics. Therefore, it is important to understand and advance the robotics literature in the field of multi-robot systems and their applications, which is the main objective of this course.
+
+                      <br> </p>
+
+                <p class="">
+This course will primarily be research oriented, with most lectures presented in a seminar-type format, and there will be a simulation/hardware project assignment. First, the instructor will present the initial few lectures and covers the fundamental concepts in networked multi-robot systems. In turn, each student will present the analysis of a research paper selected from top robotics conferences or relevant journals. All participants will be required to write a short review of the assigned readings before each lecture. In addition, the course requires each student to formulate and address a relevant research problem in networked multi-robot systems through simulation/hardware experiments either individually or in teams (depending on the course enrolment). The analysis of the chosen research problem, proposed solution, and experimental evaluation should be completed and reported in a conference-style paper by the end of the term (this is the equivalent of the final exam).
+
+                      <br> </p>
+
+
+
+
+              </div>
+            </div>
+
+<div class="row">
+              <div class="col-md-12">
+                <p class="lead1">
+                  <b>Course Topics </b>
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <p class="">
+The course topics presented here is a general plan for the course; deviations announced to the class by the instructor may be necessary.<br><br>
+
+<strong> General topics to be covered: </strong> <br>
+1. Multi-robot Rendezvous and Formation Control <br>
+2. Multi-agent Cooperation and Coordination<br>
+3. Security and adversarial actions <br>
+4. Applications of Multi-Robot Systems<br><br>
+
+<strong> Specific topics to be covered/discussed in this course: </strong>  <br>
+1. Multi-agent consensus algorithms using coordinate-based and bearing-based methods<br>
+2. Multi-robot formation control and swarming algorithms<br>
+3. Reinforcement learning for adaptation in teams of robots<br>
+4. Gaussian Processes algorithm for integrating sensor data from multiple robots<br>
+5. Multi-robot localization and navigation, SLAM, and map merging<br>
+6. Motion coordination algorithms in robots and connected vehicles <br>
+7. Distributed cooperative perception and action algorithms  <br>
+8. Algorithms to measure performance in teams of robots <br>
+9. Methods in routing and communication using wireless sensor networks in multi-robot systems <br>
+10. Communication and energy aware path planning and motion planning algorithms in the context of multi-robot systems <br>
+11. Active perception using touch (tactile), vision, and environmental assessment sensors from multiple robots <br>
+12. Vision-based and LIDAR-based sensing algorithms for heterogenous (UAV, UGV, USV) robotic systems <br>
+
+
+</p>
+
+
+              </div>
+            </div>
+
+
+            <div class="row">
+              <div class="col-md-12">
+                <p class="lead1">
+                  <b>Grading </b>
+                </p>
+              </div>
+        </div>
+
+            <table width="200" class="table" >
+          <thead>
+            <tr>
+              <th><font color="yellow">Grading Item</font></th>
+              <th><font color="yellow">Percent</font></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>In Class Participation and Attendance</td>
+              <td>10%</td>
+            </tr>
+            <tr>
+              <td>Paper Reviews/Reports</td>
+              <td>20%</td>
+            </tr>
+            <tr>
+              <td>Paper Presentations/Assignments</td>
+              <td>15%</td>
+            </tr>
+            <tr>
+              <td>Mini Project (Midterm Exam)</td>
+              <td>15%</td>
+            </tr>
+            <tr>
+              <td>Research Project (Final Exam)</td>
+              <td>40%</td>
+            </tr>
+
+            </tbody>
+        </table>
+<br><br> 
+            
+                <p class="lead1 text-secondary">
+                  <b>Class Schedule</b>
+                </p>
+<table class="table">
+<thead>
+<tr>
+<th><font color="yellow">Date</font></th>
+<th><font color="yellow">Day</font></th>
+<th><font color="yellow">Topics</font></th>
+<th><font color="yellow">Comments</font></th>
+</tr>
+</thead>
+                  <tbody>
+                      <tr>
+                      <!--<td>1</td>-->
+                      <td>Jan 9, 2019</td>
+                      <td>Wednesday</td>
+                      <td>Course Introduction</td>
+                      <td><a style="color:yellow" href="docs/cs8535_sp2019/class1/Multi_Robot_Systems_Class1_01_09_2019.pdf">Slides</a></td>
+                    </tr>
+
+<tr>
+                      <td>Jan 10, 2019</td>
+                      <td>Thursday</td>
+                      <td>Introduction to Graph Theory, Rendezvous Problem, and Formation Control Problem</td>
+                      <td><a style="color:yellow" href="docs/cs8535_sp2019/class2/Multi_Robot_Systems_Class2_01_10_2019.pdf">Slides</a>
+ <br>
+Thanks to <a href="https://www.pronobis.pro/teaching/mas/" class="External" target="_blank_">Dr. Andrej Pronobis</a> for sharing his slides.
+</td>
+                    </tr>
+
+<tr>
+                      <td>Jan 15, 2019</td>
+                      <td>Tuesday</td>
+                      <td>Rendezvous Control <br>
+Paper: <a style="color:yellow" href="pdf/DARS2018_Parasuraman.pdf">Consensus Control of Distributed Robots using Direction of Arrival of Wireless Signals </a></td>
+                      <td>Presenter: Instructor
+</td>
+                    </tr>
+
+
+                        <tr>
+                        <td>Jan 16, 2019</td>
+                        <td>Wednesday</td>
+                        <td>Perceptual maintenance of machines with different attendance frequency needs</td>
+                        <td><span class="green">Guest Lecture by <a href="http://cgi.csc.liv.ac.uk/~leszek/" class="External" target="_blank_">Prof. Leszek Gasieniec</a></span>, University of Liverpool <br>
+
+</td>
+                      </tr>
+
+<tr>
+                      <td>Jan 17, 2019</td>
+                      <td>Thursday</td>
+                      <td>Formation Control <br>
+Paper: <a style="color:yellow" href="http://www.alonsomora.com/docs/18-alonsomora-AURO.pdf">Distributed multi-robot formation control in dynamic environments</a></td>
+                      <td>Presenter: Instructor
+</td>
+                    </tr>
+
+<tr>
+                        <td>Jan 22, 2019</td>
+                        <td>Tuesday</td>
+                        <td>Paper: TBA </td>
+                        <td>Presenter: TBA</td>
+                      </tr>
+<tr>
+                        <td>Jan 23, 2019</td>
+                        <td>Wednesday</td>
+                        <td>Paper: TBA </td>
+                        <td>Presenter: TBA </td>
+                      </tr>
+<tr>
+                        <td>Jan 24, 2019</td>
+                        <td>Thursday</td>
+                        <td>Paper: TBA </td>
+                        <td>Presenter: TBA </td>
+                      </tr>
+
+<tr>
+                        <td>Jan 28, 2019</td>
+                        <td>Tuesday</td>
+                        <td>Paper: TBA </td>
+                        <td>Presenter: TBA</td>
+                      </tr>
+<tr>
+                        <td>Jan 29, 2019</td>
+                        <td>Wednesday</td>
+                        <td>Paper: TBA </td>
+                        <td>Presenter: TBA </td>
+                      </tr>
+<tr>
+                        <td>Jan 30, 2019</td>
+                        <td>Thursday</td>
+                        <td>Paper: TBA </td>
+                        <td>Presenter: TBA </td>
+                      </tr>
+
+<tr>
+                        <td>Feb 5, 2019</td>
+                        <td>Tuesday</td>
+                        <td>Paper: TBA </td>
+                        <td>Presenter: TBA</td>
+                      </tr>
+<tr>
+                        <td>Feb 6, 2019</td>
+                        <td>Wednesday</td>
+                        <td>Paper: TBA </td>
+                        <td>Presenter: TBA </td>
+                      </tr>
+<tr>
+                        <td>Feb 7, 2019</td>
+                        <td>Thursday</td>
+                        <td>Paper: TBA </td>
+                        <td>Presenter: TBA </td>
+                      </tr>
+
+
+<tr>
+                        <td>Feb 12, 2019</td>
+                        <td>Tuesday</td>
+                        <td>Paper: TBA </td>
+                        <td>Presenter: TBA</td>
+                      </tr>
+<tr>
+                        <td>Feb 13, 2019</td>
+                        <td>Wednesday</td>
+                        <td>Paper: TBA </td>
+                        <td>Presenter: TBA </td>
+                      </tr>
+<tr>
+                        <td>Feb 14, 2019</td>
+                        <td>Thursday</td>
+                        <td>Paper: TBA </td>
+                        <td>Presenter: TBA <br> <span class="blue">Midterm Project Announcement</span> </td>
+                      </tr>
+
+<tr>
+                        <td>Feb 19, 2019</td>
+                        <td>Tuesday</td>
+                        <td>Paper: TBA </td>
+                        <td>Presenter: TBA</td>
+                      </tr>
+<tr>
+                        <td>Feb 20, 2019</td>
+                        <td>Wednesday</td>
+                        <td>Paper: TBA </td>
+                        <td>Presenter: TBA </td>
+                      </tr>
+<tr>
+                        <td>Feb 21, 2019</td>
+                        <td>Thursday</td>
+                        <td>Paper: TBA </td>
+                        <td>Presenter: TBA </td>
+                      </tr>
+
+<tr>
+                        <td>Feb 26, 2019</td>
+                        <td>Tuesday</td>
+                        <td>Paper: TBA </td>
+                        <td>Presenter: TBA</td>
+                      </tr>
+<tr>
+                        <td>Feb 27, 2019</td>
+                        <td>Wednesday</td>
+                        <td>Paper: TBA </td>
+                        <td>Presenter: TBA </td>
+                      </tr>
+<tr>
+                        <td>Feb 28, 2019</td>
+                        <td>Thursday</td>
+                        <td> Paper: TBA </td>
+                        <td>Presenter: TBA </td>
+                      </tr>
+                                  
+<tr>
+                        <td>Mar 5, 2019</td>
+                        <td>Tuesday</td>
+                        <td>Paper: TBA </td>
+                        <td>Presenter: TBA <br> <span class="blue">Midterm Project submission due</span> </td>
+                      </tr>
+<tr>
+                        <td>Mar 6, 2019</td>
+                        <td>Wednesday</td>
+                        <td>Paper: TBA </td>
+                        <td>Presenter: TBA </td>
+                      </tr>
+<tr>
+                        <td>Mar 7, 2019</td>
+                        <td>Thursday</td>
+                        <td>Paper: TBA </td>
+                        <td>Presenter: TBA </td>
+                      </tr>
+<tr>
+                        <td>Mar 12, 2019</td>
+                        <td>Tuesday</td>
+                        <td>No class </td>
+                        <td><span class="blue">Spring Break</span></td>
+                      </tr>
+<tr>
+                        <td>Mar 13, 2019</td>
+                        <td>Wednesday</td>
+                        <td>No class </td>
+                        <td> <span class="blue">Spring Break</span> </td>
+                      </tr>
+<tr>
+                        <td>Mar 14, 2019</td>
+                        <td>Thursday</td>
+                        <td>No class </td>
+                        <td> <span class="blue">Spring Break</span> </td>
+                      </tr>
+
+
+<tr>
+                        <td>Mar 19, 2019</td>
+                        <td>Tuesday</td>
+                        <td>Paper: TBA </td>
+                        <td>Presenter: TBA</td>
+                      </tr>
+<tr>
+                        <td>Mar 20, 2019</td>
+                        <td>Wednesday</td>
+                        <td>Paper: TBA </td>
+                        <td>Presenter: TBA </td>
+                      </tr>
+<tr>
+                        <td>Mar 21, 2019</td>
+                        <td>Thursday</td>
+                        <td>Paper: TBA </td>
+                        <td>Presenter: TBA </td>
+                      </tr>
+
+
+<tr>
+                        <td>Mar 26, 2019</td>
+                        <td>Tuesday</td>
+                        <td>Paper: TBA </td>
+                        <td>Presenter: TBA</td>
+                      </tr>
+<tr>
+                        <td>Mar 27, 2019</td>
+                        <td>Wednesday</td>
+                        <td>Paper: TBA </td>
+                        <td>Presenter: TBA </td>
+                      </tr>
+<tr>
+                        <td>Mar 28, 2019</td>
+                        <td>Thursday</td>
+                        <td>Paper: TBA </td>
+                        <td>Presenter: TBA </td>
+                      </tr>
+
+
+<tr>
+                        <td>Apr 2, 2019</td>
+                        <td>Tuesday</td>
+                        <td>Paper: TBA </td>
+                        <td>Presenter: TBA</td>
+                      </tr>
+<tr>
+                        <td>Apr 3, 2019</td>
+                        <td>Wednesday</td>
+                        <td>Paper: TBA </td>
+                        <td>Presenter: TBA </td>
+                      </tr>
+<tr>
+                        <td>Apr 4, 2019</td>
+                        <td>Thursday</td>
+                        <td>Paper: TBA </td>
+                        <td>Presenter: TBA </td>
+                      </tr>
+
+<tr>
+                        <td>Apr 9, 2019</td>
+                        <td>Tuesday</td>
+                        <td>Paper: TBA </td>
+                        <td>Presenter: TBA</td>
+                      </tr>
+<tr>
+                        <td>Apr 10, 2019</td>
+                        <td>Wednesday</td>
+                        <td>Paper: TBA </td>
+                        <td>Presenter: TBA </td>
+                      </tr>
+<tr>
+                        <td>Apr 11, 2019</td>
+                        <td>Thursday</td>
+                        <td>Paper: TBA </td>
+                        <td>Presenter: TBA </td>
+                      </tr>
+
+
+<tr>
+                        <td>Apr 16, 2019</td>
+                        <td>Tuesday</td>
+                        <td>Paper: TBA </td>
+                        <td>Presenter: TBA</td>
+                      </tr>
+<tr>
+                        <td>Apr 17, 2019</td>
+                        <td>Wednesday</td>
+                        <td>Paper: TBA </td>
+                        <td>Presenter: TBA </td>
+                      </tr>
+<tr>
+                        <td>Apr 18, 2019</td>
+                        <td>Thursday</td>
+                        <td>Paper: TBA </td>
+                        <td>Presenter: TBA </td>
+                      </tr>
+
+
+<tr>
+                        <td>Apr 23, 2019</td>
+                        <td>Tuesday</td>
+                        <td><span class="blue">Final Project Demonstration </span></td>
+                        <td>Presenting Teams: TBA</td>
+                      </tr>
+<tr>
+                        <td>Apr 24, 2019</td>
+                        <td>Wednesday</td>
+                        <td><span class="blue">Final Project Demonstration </span></td>
+                        <td>Presenting Teams: TBA</td>
+
+                      </tr>
+<tr>
+                        <td>Apr 25, 2019</td>
+                        <td>Thursday</td>
+                        <td><span class="blue">Final Project Demonstration </span></td>
+                        <td>Presenting Teams: TBA</td>
+                      </tr>
+
+
+<tr>
+                        <td>Apr 30, 2019</td>
+                        <td>Thursday</td>
+                        <td> Recap of laerned topics and Conclusion of the course </td>
+                        <td> <span class="blue"> Last day of classes</span> </td>
+                      </tr>
+
+
+<tr>
+                        <td>May 3, 2019</td>
+                        <td>Driday</td>
+                        <td> - </td>
+                        <td> <span class="blue"> Final Project Paper submission due</span> </td>
+                      </tr>
+
+
+<tr>
+                        <td>May 13, 2019</td>
+                        <td>Monday</td>
+                        <td> - </td>
+                        <td> <span class="blue"> Grades due </span> </td>
+                      </tr>
+
+
+
+
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+		</section>
+
+		</main>
+
+		<footer id="footer">
+			<div class="container">
+				<div class="row text-center">
+					<div class="footer-content">
+						<!--<div class="wow animated fadeInDown">
+							<p>newsletter signup</p>
+							<p>Get Cool Stuff! We hate spam!</p>
+						</div>
+						<form action="#" method="post" class="subscribe-form wow animated fadeInUp">
+							<div class="input-field">
+								<input type="email" class="subscribe form-control" placeholder="Enter Your Email...">
+								<button type="submit" class="submit-icon">
+									<i class="fa fa-paper-plane fa-lg"></i>
+								</button>
+							</div>
+						</form>
+						<div class="footer-social">
+							<ul>
+								<li class="wow animated zoomIn"><a href="#"><i class="fa fa-thumbs-up fa-3x"></i></a></li>
+								<li class="wow animated zoomIn" data-wow-delay="0.3s"><a href="#"><i class="fa fa-twitter fa-3x"></i></a></li>
+								<li class="wow animated zoomIn" data-wow-delay="0.6s"><a href="#"><i class="fa fa-skype fa-3x"></i></a></li>
+								<li class="wow animated zoomIn" data-wow-delay="0.9s"><a href="#"><i class="fa fa-dribbble fa-3x"></i></a></li>
+								<li class="wow animated zoomIn" data-wow-delay="1.2s"><a href="#"><i class="fa fa-youtube fa-3x"></i></a></li>
+							</ul>
+						</div>-->
+
+						<p>Last update: Dec 10, 2018, Ramviyas Parasuraman.</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- Essential jQuery Plugins
+		================================================== -->
+		<!-- Main jQuery -->
+        <script src="js/jquery-1.11.1.min.js"></script>
+		<!-- Twitter Bootstrap -->
+        <script src="js/bootstrap.min.js"></script>
+		<!-- Single Page Nav -->
+        <script src="js/jquery.singlePageNav.min.js"></script>
+
+        <!-- jquery easing -->
+        <script src="js/jquery.easing.min.js"></script>
+        <!-- Fullscreen slider -->
+        <script src="js/jquery.slitslider.js"></script>
+        <script src="js/jquery.ba-cond.min.js"></script>
+		<!-- onscroll animation -->
+        <script src="js/wow.min.js"></script>
+		<!-- Custom Functions -->
+        <script src="js/main_new.js"></script>
+
+
+    </body>
+</html>
