@@ -107,7 +107,7 @@ a:hover { text-decoration: none; }
 }
 .External
 {
-color:#FFDE00;
+color:#FF8C00;
 }
 
 .newcontent
@@ -163,6 +163,21 @@ td
 .table
 {
 border:1px solid #ffffff;
+
+}
+.table tr th:first-child,
+.table tr td:first-child {
+  width: 15%;
+
+}
+.table tr th:first-child + td,
+.table tr td:first-child + td {
+  width: 20%;
+
+}
+.table tr th:first-child + td + td,
+.table tr td:first-child + td +td { {
+  width: 20%;
 
 }
 </style>
@@ -295,15 +310,14 @@ Students completing this course will gain an understanding of the hardware and s
                       <br> </p>
 
                 <p class="">
-<strong>Textbook:</strong> "Introduction to Autonomous Mobile Robots" by Roland Siegwart, Illah Reza Nourbakhsh, and Davide Scaramuzza, MIT Press (2nd Ed. 2011) <br>
+<strong>Textbook: "Introduction to Autonomous Mobile Robots" by Roland Siegwart, Illah Reza Nourbakhsh, and Davide Scaramuzza, MIT Press (2nd Ed. 2011) </strong> <br>
 
 <strong>Reference book:</strong> "Probabilistic Robotics" by Sebastian Thrun, Wolfram Burgard, and Dieter Fox. MIT Press (2005) <br>
 
                       <br> </p>
 
                 <p class="">
-<strong>Note: </strong> We will follow the structure and content of the <strong><a href="https://www.edx.org/course/autonomous-mobile-robots" class="External">EdX course on Autonomous Mobile Robots</a></strong> and heavily use their slides in this class (all copyrights of the slides belong to the authors and EdX). It's an excellent course from the <strong><a href="http://www.ethz.ch/en.html" class="External">ETH Zurich</a></strong> team. The idea is that the student always has an additional venue for learning and reference. It also significantly helps the instructor in preparing course materials (slides).
-                      <br> </p>
+<strong>Note: </strong> We will follow the structure and content of the <strong><a href="https://www.edx.org/course/autonomous-mobile-robots" class="External">EdX course on Autonomous Mobile Robots</a></strong> and heavily use their slides in this class (all copyrights of the slides belong to the authors and EdX). It's an excellent course from the <strong><a href="http://www.ethz.ch/en.html" class="External">ETH Zurich</a></strong> team. The idea is that the student always has an additional venue for learning and reference.                       <br> </p>
 
 
 
@@ -324,13 +338,17 @@ Students completing this course will gain an understanding of the hardware and s
 The course topics presented here is a general plan for the course; deviations announced to the class by the instructor may be necessary.<br>
 <strong> I. Overview of Robotics:</strong> Introduction, Robot Hardware, Robotic Software Architectures, Probability Theory, Field Applications <br>
 
-<strong> II. Robotic Perception:</strong> Range Finders and Camera models <br> 
+<strong> II. Robotic Perception:</strong> Range Finders and Camera models <br>
 
 <strong> III. Robotic Motion:</strong> Kinematics, Velocity Motion Model, Odometry Motion Model, Motion and Maps <br>
 
 <strong> IV. Localization:</strong> State Estimation under Uncertainty, Filters: Bayes, Kalman, Extended Kalman, and Monte Carlo, Localization methods: Markov, Extended Kalman Filter, Particle Filter, Monte Carlo framework, etc. <br>
 
 <strong> V. Mapping:</strong> Occupancy Grid Mapping, Learning Inverse Measurement Model, Simultaneous Localization and Mapping (SLAM) solutions <br>
+
+<br>
+
+The course is composed of both theoretical and practical components. There will be four assignments during this course and each assignment will have theoretical questions and practical programming problems. Likewise, the midterm and final exam has written quizzes and programming projects. Therefore, it is necessary to learn and perform well in both theoretical and practical parts of this course to pass the course.
 
 </p>
 
@@ -356,382 +374,342 @@ The course topics presented here is a general plan for the course; deviations an
           </thead>
           <tbody>
             <tr>
-              <td>Class participation</td>
+              <td>Class participation  </td>
               <td>5%</td>
             </tr>
             <tr>
-              <td>Assignments</td>
+              <td>Assignments (Each 10%)</td>
               <td>40%</td>
             </tr>
             <tr>
-              <td>Midterm exam</td>
+              <td>Midterm Exam + Midterm Project</td>
               <td>20%</td>
             </tr>
             <tr>
-              <td>Final exam</td>
+              <td>Final Exam + Final Project</td>
               <td>35%</td>
             </tr>
             </tbody>
         </table>
-<br><br> 
-            
+<br><br>
+
                 <p class="lead1 text-secondary">
                   <b>Class Schedule</b>
                 </p>
-<table width="300" class="table">
+<table width="400" class="table">
 <thead>
 <tr>
 <th><font color="yellow">Date</font></th>
 <th><font color="yellow">Day</font></th>
 <th><font color="yellow">Topics</font></th>
-<th><font color="yellow">Comments</font></th>
+<th><font color="yellow">Comments/Lecture Notes</font></th>
 </tr>
 </thead>
                   <tbody>
                     <tr>
                       <!--<td>1</td>-->
-                      <td>08-15-2018</td>
-                      <td>Monday</td>
+                      <td>08-15-2019</td>
+                      <td>Thursday</td>
                       <td>Course Introduction</td>
-                      <td>
-</td>
+                      <td></td>
                     </tr>
                     <tr>
-                      <td>08-14-2018</td>
-                      <td>Tuesday</td>
+                      <td>08-19-2019</td>
+                      <td>Monday</td>
                       <td>Overview of Robotics,<br />
                           History of Robotics,<br />
                           Sensors, and Hardware</td>
-<td></td>
+                          <td></td>
                     </tr>
                     <tr>
 
-                      <td>08-16-2018</td>
-                      <td>Thursday</td>
+                      <td>08-20-2019</td>
+                      <td>Tuesday</td>
                       <td>Wheeled kinematics - Introduction <br /> ROS - Introduction</td>
-<td><a style="color:yellow" href="docs/csx530_fall2018/lecture3/introduction-robotics-lecture3.pdf">Main slides</a> <br> <a style="color:yellow" href="docs/csx530_fall2018/lecture3/ROS_introduction.pdf">Introduction to ROS</a> <br> <a style="color:yellow" href="docs/csx530_fall2018/lecture3/EdX_Wheeled_Kinematics_part1.pdf">Wheeled Kinematics - Part I (EdX)</a>  </td>
-                                        </tr>
+                      <td></td>
+                    </tr>
                       <tr>
-                        <td>08-20-2018</td>
-                        <td>Monday</td>
-                        <td>ROS - Setup</td>
-                        <td>Practicum <br><a style="color:yellow" href="docs/csx530_fall2018/lecture4/introduction-robotics-lecture4.pdf">Main slides</a> </td>
-
-                      </tr> 
-                      <tr>
-                        <td>08-21-2018</td>
-                        <td>Tuesday</td>
-                        <td>Kinematics - continued</td>
-<td><a style="color:yellow" href="docs/csx530_fall2018/lecture5/introduction-robotics-lecture5.pdf">Main slides</a> <br> <a style="color:yellow" href="docs/csx530_fall2018/lecture5/EdX_Kinematics_Basics.pdf">Basics of Kinematics (EdX)</a>  <br> <a style="color:yellow" href="docs/csx530_fall2018/lecture5/EdX_Wheeled_Kinematics_part2.pdf">Wheeled Kinematics - Part II (EdX)</a> <br> <a style="color:yellow" href="docs/csx530_fall2018/lecture5/EdX_Wheeled_Kinematics_part3.pdf">Wheeled Kinematics - Part III (EdX)</a>  <br> <a style="color:yellow" href="docs/csx530_fall2018/lecture5/EdX_Wheeled_Kinematics_part4_differential_drive.pdf">Wheeled Kinematics - Differential Drive Robot (EdX)</a>  </td>
-                      </tr>
-                      <tr>
-                        <td>08-23-2018</td>
+                        <td>08-22-2019</td>
                         <td>Thursday</td>
-                        <td>Probability theory - basics</td>
-<td><a style="color:yellow" href="docs/csx530_fall2018/lecture6/introduction-robotics-lecture6.pdf">Main slides</a> <br> <a style="color:yellow" href="docs/csx530_fall2018/lecture6/Basics_of_Probability.pdf">Basics of Probability in Robotics</a> <br> <a style="color:yellow" href="docs/csx530_fall2018/lecture6/EdX_Wheeled_Kinematics_degree_of_Maneuverability.pdf">Kinematics - Degree of Maneuverability (EdX)</a>  </td>
+                        <td>ROS - Setup</td>
+                        <td></td>
+
                       </tr>
                       <tr>
-                        <td>08-27-2018</td>
+                        <td>08-26-2019</td>
                         <td>Monday</td>
-                        <td>Sensors Model - Rangefinders</td>
-                        <td class="green">Guest Lecture by <a href="http://thinc.cs.uga.edu/personnel.html" class="External" target="_blank_">Prof. Prashant Doshi</a></td>
+                        <td>Kinematics - Continued</td>
+                        <td></td>
                       </tr>
                       <tr>
-                        <td>08-28-2018</td>
+                        <td>08-27-2019</td>
+                        <td>Tuesday</td>
+                        <td>Probability theory - Basics</td>
+                      <td></td>
+                      </tr>
+                      <tr>
+                        <td>08-29-2019</td>
+                        <td>Thursday</td>
+                        <td>Sensors Model - Rangefinders</td>
+                        <td></td>
+                        </tr>
+                        <tr>
+                          <td>09-02-2019</td>
+                          <td>Monday</td>
+                          <td><span class="blue">Holiday - Labor Day</span></td>
+                          <td></td>
+                        </tr>
+                      <tr>
+                        <td>09-03-2019</td>
                         <td>Tuesday</td>
                         <td>ROS: Nodes, Topics, Publisher, and Subscriber</td>
-                        <td>Practicum</td>
-                      </tr> 
-                      <tr>
-                        <td>08-30-2018</td>
-                        <td>Thursday</td>
-				 <td>Sensors Model: cameras</td>
-<td><a style="color:yellow" href="docs/csx530_fall2018/lecture9/introduction-robotics-lecture9.pdf">Main slides</a> <br> <a style="color:yellow" href="docs/csx530_fall2018/lecture9/EdX_Vision_1_Introduction_Computer_Vision.pdf">Introduction to Computer Vision (EdX) </a>  <br> <a style="color:yellow" href="docs/csx530_fall2018/lecture9/EdX_Vision_2_Camera_image_formation_perspective_projection.pdf">Perspective Camera Model (EdX)</a> <br> <a style="color:yellow" href="docs/csx530_fall2018/lecture9/EdX_Vision_3_Omnidirectional_projection_camera_calibration_unified_model.pdf">Omnidirectional Camera Model (EdX)</a>  <br> <a style="color:yellow" href="docs/csx530_fall2018/lecture9/EdX_Vision_4_Stereo_Vision.pdf">Stereo Camera Model (EdX)</a>  </td>                 
-                      </tr> 
-                      <tr>
-                        <td>09-03-2018</td>
-                        <td>Monday</td>
                         <td></td>
-                        <td><span class="blue">Labor Day - Holiday (No class)</span><br /><span style="color:orange">Assignment 1 announced <a style="color:yellow" href="docs/csx530_fall2018/assignment1/csci_x530_robotics_assignment1.pdf">(Instructions)</a> - deadline 09/10 (12:30 pm) </span>
-</td>
-
                       </tr>
                       <tr>
-                        <td>09-04-2018</td>
+                        <td>09-05-2019</td>
+                        <td>Thursday</td>
+				                <td>Sensors Model: cameras</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>09-09-2019</td>
+                        <td>Monday</td>
+                        <td>Sensors Model: Conclusion <br> Robot Perception: Introduction </td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>09-10-2019</td>
                         <td>Tuesday</td>
                         <td>Perception: Computer Vision - fundamentals <br> ROS: Subscriber and Custom Messages</td>
-                        <td>Lecture + Practicum <br>
-<a style="color:yellow" href="docs/csx530_fall2018/lecture10/introduction-robotics-lecture10.pdf">Main slides</a> 
-</td>
-
+                        <td></td>
                       </tr>
                       <tr>
-                        <td>09-06-2018</td>
+                        <td>09-12-2019</td>
                         <td>Thursday</td>
                         <td>Perception: Image processing basics</td>
-                        <td> <a style="color:yellow" href="docs/csx530_fall2018/lecture11/EdX_Computer_Vision_Correlation_Convolution.pdf">Image Processing - Correlation and Convolution (EdX)</a> <br> <a style="color:yellow" href="docs/csx530_fall2018/lecture11/EdX_Computer_Vision_Edges_Points.pdf">Image Processing - Edges and Points (EdX)</a>  <br> <a style="color:yellow" href="docs/csx530_fall2018/lecture11/Homework_Structure_from_Motion.pdf">Homework - Structure from Motion (EdX)</a>  </td>
+                        <td> </td>
                       </tr>
                       <tr>
-                        <td>09-10-2018</td>
+                        <td>09-16-2019</td>
                         <td>Monday</td>
                         <td>ROS: Services and Parameters</td>
-                        <td>Practicum <br>
-<a style="color:yellow" href="docs/csx530_fall2018/lecture12/introduction-robotics-lecture12.pdf">Main slides</a> 
-</td>
+                        <td></td>
                       </tr>
                       <tr>
-                        <td>09-11-2018</td>
+                        <td>09-17-2019</td>
                         <td>Tuesday</td>
                         <td>Perception: Feature extraction, edge detection, corner detection, SIFT features, etc.</td>
-<td><a style="color:yellow" href="docs/csx530_fall2018/lecture13/introduction-robotics-lecture13.pdf">Main slides</a> <br> <a style="color:yellow" href="docs/csx530_fall2018/lecture13/EdX_Computer_Vision_Correlation_Example.pdf">Image Processing - Correlation Example (EdX)</a> <br> <a style="color:yellow" href="docs/csx530_fall2018/lecture13/EdX_Computer_Vision_Edges_Points.pdf">Image Processing - Corner Detection and Feature Extraction (EdX)</a>  <br> <a style="color:yellow" href="docs/csx530_fall2018/lecture13/EdX_Computer_Vision_Place_recognition.pdf">Computer Vision - Object/Place Recognition (EdX)</a>  </td>
+                        <td></td>
                       </tr>
+
                       <tr>
-                        <td>09-13-2018</td>
+                        <td>09-19-2019</td>
                         <td>Thursday</td>
                         <td>Computer Vision: Line Extraction <br> Localization: Introduction to Markovian Approach </td>
-<td><a style="color:yellow" href="docs/csx530_fall2018/lecture14/introduction-robotics-lecture14.pdf">Main slides</a> <br> <a style="color:yellow" href="docs/csx530_fall2018/lecture14/EdX_Computer_Vision_Line_Extraction.pdf">Perception - Line Extraction (EdX)</a> <br> <a style="color:yellow" href="docs/csx530_fall2018/lecture14/EdX_Localization_Markov_Approach.pdf">Localization - Markovian Approach (EdX)</a>  </td>
-                      </tr>
+                        <td></td></tr>
                       <tr>
-                        <td>09-17-2018</td>
+                        <td>09-23-2019</td>
                         <td>Monday</td>
                         <td>ROS: Assignment 1 discussions, running ROS across different machines</td>
-                        <td>Practicum <br /><span class="blue"></span></td>
+                        <td></td>
                       </tr>
                       <tr>
-                        <td>09-18-2018</td>
+                        <td>09-24-2019</td>
                         <td>Tuesday</td>
                         <td>Localization: Markovian and Kalman Filter Approaches</td>
-<td><a style="color:yellow" href="docs/csx530_fall2018/lecture16/introduction-robotics-lecture16.pdf">Main slides</a> <br> <a style="color:yellow" href="docs/csx530_fall2018/lecture16/EdX_Localization_Markov_Approach.pdf">Localization - Markovian Approach (EdX)</a> <br> <a style="color:yellow" href="docs/csx530_fall2018/lecture16/EdX_Localization_Kalman_Filter_Approach.pdf">Localization - Kalman Filter Approach (EdX)</a>   </td>
-                      </tr>
+                        <td></td>  </tr>
                       <tr>
-                        <td>09-20-2018</td>
+                        <td>09-26-2019</td>
                         <td>Thursday</td>
                         <td>Localization - Probabilistic map-based localization, Markov localization, Kalman filter localization</td>
-<td><a style="color:yellow" href="docs/csx530_fall2018/lecture17/introduction-robotics-lecture17.pdf">Main slides</a> <br> <a style="color:yellow" href="docs/csx530_fall2018/lecture17/MarkovLocalization_Example_Prof.ChrisClark.pdf">Markov Localization Example (slides courtesy of Prof. Chris Clark, Princeton, 2011)</a> <br> <a style="color:yellow" href="docs/csx530_fall2018/lecture17/EdX_Localization_Kalman_Filter_Approach.pdf">Localization - Kalman Filter Approach (EdX)</a>   </td>                      </tr>
+                        <td></td>
+                      </tr>
                       <tr>
-                        <td>09-24-2018</td>
+                        <td>09-30-2019</td>
                         <td>Monday</td>
                         <td>ROS: rosbag and working with simulated data <br> Example implementation of EKF localization in Python</td>
-                        <td>Practicum <br><a style="color:yellow" href="docs/csx530_fall2018/lecture18/introduction-robotics-lecture18.pdf">Main slides</a> </td>
+                        <td></td>
                       </tr>
                       <tr>
-                        <td>09-25-2018</td>
+                        <td>10-01-2019</td>
                         <td>Tuesday</td>
                         <td>Localization: Particle Filters</td>
-                        <td><a style="color:yellow" href="docs/csx530_fall2018/lecture19/introduction-robotics-lecture19.pdf">Main slides</a> 
-</td>
+                        <td></td>
                       </tr>
 
 
                       <tr>
-                        <td>09-27-2018</td>
+                        <td>10-03-2019</td>
                         <td>Thursday</td>
                         <td>Localization: Examples </td>
                         <td></td>
                       </tr>
                       <tr>
-                        <td>10-01-2018</td>
+                        <td>10-07-2019</td>
                         <td>Monday</td>
-                        <td>ROS: Simulation in Gazebo</td>
-                        <td>Practicum <br><a style="color:yellow" href="docs/csx530_fall2018/lecture21/introduction-robotics-lecture21.pdf">Main slides</a> </td>
-                      </tr>
-                      <tr>
-                        <td>10-02-2018</td>
-                        <td>Tuesday</td>
-                        <td>SLAM: Introduction to the SLAM problem, challenges</td>
-                        <td><a style="color:yellow" href="docs/csx530_fall2018/lecture23/EdX_SLAM.pdf">Introduction to SLAM Problem (EdX)</a></td>
-                      </tr>
-                      <tr>
-                        <td>10-04-2018</td>
-                        <td>Thursday</td>
-                        <td><span class="blue">Mid-term exam (theory). <br> Practical Mid-term project will be annouced soon </span></td>
+                        <td>                          <span class="blue">Mid-term exam (theory). <br> Practical Mid-term project will be annouced in the class </span></td>
                         <td></td>
                       </tr>
                       <tr>
-                        <td>10-08-2018</td>
-                        <td>Monday</td>
-                        <td>Discussion of Midterm questions and solutions </td>
-                        <td><span style="color:orange">Midterm project announced <a style="color:yellow" href="docs/csx530_fall2018/midterm/midterm_project.pdf">(Instructions)</a> - Deadline 10/15 12:30 pm </span></td>
-                      </tr>
-                      <tr>
-                        <td>10-09-2018</td>
+                        <td>10-08-2019</td>
                         <td>Tuesday</td>
-                        <td>SLAM: continued</td>
-                        <td> <a style="color:yellow" href="docs/csx530_fall2018/lecture23/EdX_SLAM.pdf">Introduction to SLAM Problem (EdX)</a> <br> <a style="color:yellow" href="docs/csx530_fall2018/lecture23/EdX_SLAM_Example.pdf">SLAM Problem - Illustration (EdX)</a> <br> <a style="color:yellow" href="docs/csx530_fall2018/lecture23/EdX_Monocular_SLAM.pdf">SLAM - Using Monocular Vision (EdX)</a>  </td>
+                        <td>SLAM: Introduction to the SLAM problem, challenges</td>
+                        <td></td>
                       </tr>
-                      <tr>
-                        <td>10-11-2018</td>
-                        <td>Thursday</td>
-                        <td>SLAM- continued</td>
-                        <td><a style="color:yellow" href="docs/csx530_fall2018/lecture24/EdX_SLAM_MonocularSLAM_Challenges.pdf">SLAM - Challenges and Beyond (EdX)</a> </td>
-                      </tr>
-                      <tr>
-                        <td>10-15-2018</td>
-                        <td>Monday</td>
-                        <td>Machine Learning</td>
-                        <td><span class="green">Guest Lecture by <a href="http://cobweb.cs.uga.edu/~shengli" class="External" target="_blank_">Prof. Sheng Li</a></span> <br>
-<a style="color:yellow" href="docs/csx530_fall2018/guest/CSCI_4530_Guest_Lecture_Machine_Learning.pdf">Machine Learning - Prof. Sheng Li</a> 
 
-</td>
+                      <tr>
+                        <td>10-10-2019</td>
+                        <td>Thursday</td>
+                        <td>Discussion of midterm questions and solutions </td>
+                        <td></td>
                       </tr>
                       <tr>
-                        <td>10-16-2018</td>
+                        <td>10-14-2019</td>
+                        <td>Monday</td>
+                        <td>SLAM: Continued</td>
+                        <td> </td>
+                      </tr>
+                       <tr>
+                          <td>10-15-2019</td>
+                          <td>Tuesday</td>
+                          <td>ROS: Simulation in Gazebo</td>
+                          <td></td>
+                        </tr>
+                      <tr>
+                        <td>10-17-2019</td>
+                        <td>Thursday</td>
+                        <td>SLAM: Continued</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>10-21-2019</td>
+                        <td>Monday</td>
+                        <td>Machine Learning (Guest Lecture)</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>10-22-2019</td>
                         <td>Tuesday</td>
-                        <td>Cloud Computing and IoT</td>
-                        <td><span class="green">Guest Lecture by <a href="http://cobweb.cs.uga.edu/~kim" class="External" target="_blank_">Prof. In Kee Kim</a></span> </td>
+                        <td>Cloud Computing and IoT (Guest Lecture)</td>
+                        <td></td>
                       </tr>
                       <tr>
-                        <td>10-18-2018</td>
+                        <td>10-24-2019</td>
                         <td>Thursday</td>
                         <td>Demonstration of mid-term projects</td>
                         <td></td>
                       </tr>
                       <tr>
-                        <td>10-22-2018</td>
+                        <td>10-28-2019</td>
                         <td>Monday</td>
                         <td>ROS -  rosparameters, joy teleop, laser scan data</td>
-                        <td>Practicum </td>
+                        <td></td>
                       </tr>
                       <tr>
-                        <td>10-23-2018</td>
+                        <td>10-29-2019</td>
                         <td>Tuesday</td>
                         <td>SLAM - Recap and Conclusion <br>
 Navigation and Motion Planning - Introduction and Collision Avoidance </td>
-                        <td><span style="color:orange">Assignment 2 announced <a style="color:yellow" href="docs/csx530_fall2018/assignment2/csci_x530_robotics_assignment2.pdf">(Instructions)</a> - deadline 10/30 (12:30 pm) <br>
-<a style="color:yellow" href="docs/csx530_fall2018/lecture26/EdX_MotionPlanning_Introduction.pdf">Introduction to Motion Planning (EdX)</a> <br>
-<a style="color:yellow" href="docs/csx530_fall2018/lecture26/EdX_MotionPlanning_CollisionAvoidance.pdf">Motion Planning - Collision Avoidance using Velocity Obstacles Methods (EdX)</a> 
-</span>
-An Example implementation of RVO algorithm for Multi-Agent Systems by Dr. Meng Guo is available <a href="https://github.com/MengGuo/RVO_Py_MAS"> here </a>
-</td>
+                        <td></td>
                       </tr>
                       <tr>
-                        <td>10-25-2018</td>
+                        <td>10-31-2019</td>
                         <td>Thursday</td>
                         <td>Navigation and Motion Planning - Collision Avoidance using Potential Fields </td>
-                        <td><a style="color:yellow" href="docs/csx530_fall2018/lecture27/EdX_MotionPlanning_PotentialFieldMethods.pdf">Motion Planning - Potential Field Methods (EdX)</a></td>
+                        <td></td>
                       </tr>
                       <tr>
-                        <td>10-29-2018</td>
+                        <td>11-04-2019</td>
                         <td>Monday</td>
                         <td> ROS transform frames (tf) - static and dynamic transform <br> tf broadcaster and listener example in Python </td>
-                        <td>Practicum</td>
+                        <td></td>
                       </tr>
                       <tr>
-                        <td>10-30-2018</td>
+                        <td>11-05-2019</td>
                         <td>Tuesday</td>
                         <td>Navigation and Motion Planning - Potential Fields (contd.) <br>
 Motion Planning - Graph Construction and Graph-based Search methods - Dijkstra, A*, RRT algorithms </td>
-                        <td>
-<a style="color:yellow" href="docs/csx530_fall2018/lecture28/EdX_MotionPlanning_PotentialFields_Example.pdf">Potential Fields - Example (EdX)</a> <br>
-<a style="color:yellow" href="docs/csx530_fall2018/lecture28/EdX_MotionPlanning_GraphSearch_Part1.pdf">Motion Planning - Graph Construction (EdX) <br>
-<a style="color:yellow" href="docs/csx530_fall2018/lecture28/EdX_MotionPlanning_GraphSearch_Part2.pdf">Motion Planning - Graph-based Search Methods(EdX)
-</td>
+                        <td></td>
                       </tr>
                       <tr>
-                        <td>11-01-2018</td>
+                        <td>11-07-2019</td>
                         <td>Thursday</td>
                         <td>Navigation and path planning - A* Algorithm Example and Conclusion </td>
-                        <td> <a style="color:yellow" href="docs/csx530_fall2018/lecture29/EdX_MotionPlanning_AStarExercise.pdf"> A* - Example (EdX)</a> </td>
-                      </tr>
+                        <td></td></tr>
                       <tr>
-                        <td>11-05-2018</td>
+                        <td>11-11-2019</td>
                         <td>Monday</td>
                         <td>ROS - actionlib, working with real robots</td>
-                        <td>Practicum</td>
+                        <td></td>
                       </tr>
                       <tr>
-                        <td>11-06-2018</td>
+                        <td>11-12-2019</td>
                         <td>Tuesday</td>
                         <td>Robot Motion Models - Odometry and Velocity Models </td>
-                        <td><a style="color:yellow" href="docs/csx530_fall2018/lecture30/RobotMotionModels.pdf"> Motion Models </a></td>
+                        <td></td>
                       </tr>
                       <tr>
-                        <td>11-08-2018</td>
+                        <td>11-14-2019</td>
                         <td>Thursday</td>
                         <td>ROS Examples - SLAM <br> Discussion on Final Project </td>
-                        <td> Practicum <br> Discussion </td>
+                        <td></td>
                       </tr>
                       <tr>
-                        <td>11-12-2018</td>
+                        <td>11-18-2019</td>
                         <td>Monday</td>
                         <td>ROS Examples - Transfer Frames (TF) <br> Robot Applications in Radioactive Environments - Examples </td>
-                        <td> Practicum <br> Discussion </td>
+                        <td></td>
                       </tr>
                       <tr>
-                        <td>11-13-2018</td>
+                        <td>11-19-2019</td>
                         <td>Tuesday</td>
                         <td>ROS Practical - Hector SLAM </td>
-                        <td>Practicum <br> 
-<span style="color:orange">Assignment 3 announced <a style="color:yellow" href="docs/csx530_fall2018/assignment3/csci_x530_robotics_assignment3.pdf">(Instructions)</a> - deadline 11/20 (11:30 pm) </td>
+                        <td></td>
                       </tr>
                       <tr>
-                        <td>11-15-2018</td>
+                        <td>11-21-2019</td>
                         <td>Thursday</td>
                         <td>Robot Planning - Markov Decision Process (MDP) </td>
-                        <td>I used Prof. Andrew Vardy's <a style="color:yellow" href="http://www.cs.mun.ca/~av/courses/4766-current/manual_uploads/probPlanning_printout.pdf"> slides </a> (with permission)</td>
+                        <td></td>
                       </tr>
                       <tr>
-                        <td>11-19-2018</td>
+                        <td>11-25-2019</td>
                         <td>Monday</td>
-                        <td>-</td>
-                        <td><span class="blue">Thanksgiving Break</span></td>
+                        <td> Uncovered Topic </td>
+                        <td></td>
                       </tr>
                       <tr>
-                        <td>11-20-2018</td>
+                        <td>11-26-2019</td>
                         <td>Tuesday</td>
-                        <td>-</td>
-                        <td><span class="blue">Thanksgiving Break</span></td>
+                        <td> Uncovered Topic </td>
+                        <td></td>
                       </tr>
                       <tr>
-                        <td>11-22-2018</td>
+                        <td>11-28-2019</td>
                         <td>Thursday</td>
-                        <td>-</td>
                         <td><span class="blue">Thanksgiving Break</span></td>
-                      </tr>
-                      <tr>
-                        <td>11-26-2018</td>
-                        <td>Monday</td>
-                        <td> Discussion on Final Project - Status updates </td>
                         <td></td>
                       </tr>
                       <tr>
-                        <td>11-27-2018</td>
-                        <td>Tuesday</td>
-                        <td>Recap of all topics and conclusion of the course</td>
-                        <td>Conclusion</td>
-                      </tr>
-                      <tr>
-                        <td>11-29-2018</td>
-                        <td>Thursday</td>
-                        <td>Discussion of Assignment 3 solutions and Final Project updates </td>
-                        <td></td>
-
-                      </tr>
-                      <tr>
-                        <td>12-03-2018</td>
+                        <td>12-02-2019</td>
                         <td>Monday</td>
-                        <td>Scheduled demonstration of final project </td>
-                        <td>All teams</td>
-
+                        <td><span class="blue">Final Project Demonstrations</span></td>
+                        <td></td>
                       </tr>
+
                       <tr>
-                        <td>12-04-2018</td>
-                        <td>Tuesday (Friday in Effect)</td>
+                        <td>12-02-2019</td>
+                        <td>Monday</td>
+                        <td><span class="blue">Final Project Demonstrations</span></td>
+                        <td></td>
+                      </tr>
+                        <td>TBA</td>
                         <td>-</td>
-                        <td>No class because Friday schedule </td>
-                      </tr>
-                      <tr>
-                        <td>12-10-2018 </td>
-                        <td>Monday</td>
-                        <td>Final Exams (written) - 12 to 3 pm at Boyd 202 </td>
-                        <td>Final Exam</td>
-                      </tr>
-                      <tr>
-                        <td>12-17-2018</td>
-                        <td>Monday, 12 PM</td>
-                        <td>Grades due</td>
+                        <td><span class="blue">Final Exam </span></td>
                         <td></td>
                       </tr>
+
+
 
                   </tbody>
                 </table>
